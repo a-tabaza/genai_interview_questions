@@ -26,7 +26,7 @@ I will be loosly following the same order.
 
 ## What is the difference between Predictive/Discriminative and Generative AI Models?
 Let's consider a dataset, where each data point represents a cat. Let's pass it through to each type of model, and see how they differ:
-- **Predictive/Discriminative Model**: This type of model will either try to discriminate between different data point, by virtue of a decision boundary, and a mapping function, or by predicting the probability of a class label given the model's ability to learn patterns from the data.
+- **Predictive/Discriminative Model**: This type of model will either try to discriminate between different data points, by virtue of a decision boundary, and a mapping function, or by predicting the probability of a class label given the model's ability to learn patterns from the data.
 - **Generative Model**: This type of model will try to generate new data points, by learning the underlying distribution of the data given all the data points in the dataset.
 
 ## What is a Large Language Model (LLM)?
