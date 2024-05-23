@@ -1,7 +1,9 @@
 # Large Language Models Interview Questions
 This repository contains interview questions about Large Language Models (LLMs). I'm basing it off of [Mastering LLM](https://www.masteringllm.com/course/llm-interview-questions-and-answers), credit to them for getting this project started, however, my contribution will be the answers.
 
-7 questions answered out of ??.
+9 questions answered out of ??.
+
+_Note:_ I started by writing up the answers, but realized soon it would be much better to cite references, so I will be doing that from now on. Consider this a resource collective of sorts.
 
 ## Table of Contents
 In the original material, the questions are divided into the following chapters:
@@ -107,5 +109,40 @@ In the decoding process, LLMs autoregressively generate text one token at a time
 - Maximum Length: Stop generating text when the generated text reaches a certain length.
 - End of Sentence Token: Stop generating text when the model generates an end of sentence token.
 
+## What are some elements that make up a prompt?
+```
+A prompt contains any of the following elements:
 
+Instruction - a specific task or instruction you want the model to perform
 
+Context - external information or additional context that can steer the model to better responses
+
+Input Data - the input or question that we are interested to find a response for
+
+Output Indicator - the type or format of the output.
+```
+Reference: [Prompt Engineering Guide](https://www.promptingguide.ai/introduction/elements)
+
+Recommended reading: 
+- [Prompt Engineering Guide](https://www.promptingguide.ai/)
+- [OpenAI's Prompt Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering)
+- [Anthropic's Prompt Engineering Guide](https://docs.anthropic.com/en/docs/prompt-engineering)
+
+## What are some common prompt engineering techniques?
+
+1. Zero-shot Prompting
+2. Few-shot Prompting
+3. Chain-of-Thought Prompting
+4. Self-Consistency
+5. Generate Knowledge Prompting
+6. Prompt Chaining
+7. Tree of Thoughts
+8. Retrieval Augmented Generation
+9. ReAct
+
+Reference: [Prompt Engineering Guide](https://www.promptingguide.ai/techniques)
+
+Recommended reading: 
+- [Prompt Engineering Guide](https://www.promptingguide.ai/)
+- [OpenAI's Prompt Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering)
+- [Anthropic's Prompt Engineering Guide](https://docs.anthropic.com/en/docs/prompt-engineering)
