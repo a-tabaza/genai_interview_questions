@@ -103,6 +103,7 @@ Fancy decoding strategies include Speculative Decoding which is a wild concept, 
 
 Recommended reading:
 - [Text generation strategies by HuggingFace](https://huggingface.co/docs/transformers/generation_strategies)
+- [A Hitchhiker’s Guide to Speculative Decoding by Team PyTorch at IBM](https://pytorch.org/blog/hitchhikers-guide-speculative-decoding/)
 
 ## What are the stopping criteria for decoding in the context of LLMs?
 In the decoding process, LLMs autoregressively generate text one token at a time. There are several stopping criteria that can be used to determine when to stop generating text. Some common stopping criteria include:
