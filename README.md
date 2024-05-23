@@ -49,6 +49,7 @@ To facilitate this broad type of learning, there exists multiple training tasks 
 Mask Language Modeling is based of the [Cloze Test](https://en.wikipedia.org/wiki/Cloze_test), where we mask out a word in a sentence, and ask the model to predict it. Similar to a fill in the blank test. It differs from asking the model to predict the next word in a sentence, as it requires the model to understand the context of the sentence, and not just the sequence of words.
 
 Next Sentence Prediction is a task where the model is given two sentences, and it has to predict if the second sentence follows the first one. As simple as it sounds, it requires the model to understand the context of the first sentence, and the relationship between the two sentences.
+
 An excellent resource to learn more about these tasks is the [BERT paper](https://arxiv.org/abs/1810.04805).
 
 ### Fine-tuning:
