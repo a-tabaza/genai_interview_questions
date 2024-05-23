@@ -86,7 +86,7 @@ This is a very loaded question, but here are some resources to explore this topi
 - [The Case for Self-Hosting Large Language Models](https://www.titanml.co/resources/the-case-for-self-hosting-large-language-models)
 - [Exploring the Differences: Self-hosted vs. API-based AI Solutions](https://www.titanml.co/resources/exploring-the-differences-self-hosted-vs-api-based-ai-solutions)
 
-## When you run inference on an LLM, you can pick hyperparameters such as temperature, top-k, top-p, and repetition penalty. What do these hyperparameters do?
+## What are the different parameters that can be tuned in LLMs during inference?
 Recommended reading:
 - [How to tune LLM Parameters for optimal performance](https://datasciencedojo.com/blog/tuning-optimizing-llm-parameters/)
 - [OpenAI Documentation](https://platform.openai.com/docs/guides/text-generation)
