@@ -5,6 +5,8 @@ I am using this reference: [Mastering LLM](https://www.masteringllm.com/course/l
 
 _Note:_ I am trying to keep the answers I write myself to a minumum, since I am in no way or form an authoritative source on this topic. I will be providing references to the best of my ability.
 
+I also plan to expand this in Generative AI in general.
+
 ## Preamble
 If you've reached the stage where you're interviewing for Generative AI roles, this will help you a lot. 
 
