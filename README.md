@@ -1,7 +1,9 @@
 # Large Language Models Interview Questions
-This repository contains interview questions about Large Language Models (LLMs). I'm basing it off of [Mastering LLM](https://www.masteringllm.com/course/llm-interview-questions-and-answers), credit to them for getting this project started, however, my contribution will be the answers. This is still a work in progress, once I get it to a good place, I will open it to contributions.
+This repository contains interview questions about Large Language Models (LLMs). 
 
-_Note:_ I started by writing up the answers, but realized soon it would be much better to cite references, so I will be doing that from now on. Consider this a resource collective of sorts.
+I am using this reference: [Mastering LLM](https://www.masteringllm.com/course/llm-interview-questions-and-answers) as the base, credit to them for compiling it, however, I am taking _alot_ of liberies with editing the questions, as well as the answers, they are completely my own.
+
+_Note:_ I am trying to keep the answers I write myself to a minumum, since I am in no way or form an authoritative source on this topic. I will be providing references to the best of my ability.
 
 ## Preamble
 If you've reached the stage where you're interviewing for Generative AI roles, this will help you a lot. 
@@ -14,7 +16,7 @@ If you're just getting started, my one and only piece of advice is:
 In the original material, the questions are divided into the following chapters:
 1. ~~Road map~~
 2. ~~Prompt engineering & basics of LLM~~
-3. Retrieval augmented generation (RAG)
+3. ~~Retrieval augmented generation (RAG)~~
 4. Chunking strategies
 5. Embedding Models
 6. Internal working of vector DB
@@ -201,3 +203,31 @@ The concept of Chain-of-Thought Prompting is known to enhance reasoning capabili
 Recommended Reading:
 - [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903)
 - [Chain-of-Thought Prompting by Prompt Engineering Guide](https://www.promptingguide.ai/techniques/cot)
+
+## What is a common design pattern for grounding LLM answers in facts?
+Retrieval Augmented Generation (RAG) is a common design pattern for grounding LLM answers in facts. This technique involves retrieving relevant information from a knowledge base and using it to guide the generation of text by the LLM.
+
+## Explain the intuition and methodology behind Retrieval Augmented Generation (RAG)
+Retrieval Augmented Generation (RAG) is composed of two main component:
+- A retriever: This component is responsible for retrieving relevant information from a knowledge base given a query.
+- A generator: This component is responsible for generating text based on the retrieved information.
+
+The intuition behind RAG is that by combining the strengths of retrieval-based and generation-based models, we can create a system that is capable of generating text that is grounded in facts, thus limiting hallucination.
+
+RAG is often the go-to technique for answering complex questions based on a knowledge base, as it allows the model to leverage external information to provide more accurate and informative answers. It is not always feasible to fine-tune a model on proprietary data, and RAG provides a way to incorporate external knowledge without the need for fine-tuning.
+
+## Provide a high-level overview of the steps involved in implementing a full solution that utilizes RAG to answer a complex question based on a knowledge base
+A full solution that utilizes RAG to answer a complex question based on a knowledge base would involve the following steps:
+- Data Ingestion: documents or data streams that compromise the knowledge base are ingested into a data pipeline and processed in a way that is suitable for retrieval.
+- Indexing: the processed data is indexed in a way that allows for efficient retrieval.
+- Retrieval: given a query, the retriever component retrieves relevant information from the knowledge base.
+- Generation: the generator component generates text based on the retrieved information.
+- Post-processing: the generated text is post-processed to ensure factuality and integrity.
+
+## Discuss the case of RAG vs. Full Fine-tuning
+Recommended Reading (both sides of the argument):
+- [Fine-Tuning vs. Retrieval Augmented Generation (RAG): Tailoring Large Language Models to Your Needs](https://www.linkedin.com/pulse/fine-tuning-vs-retrieval-augmented-generation-rag-tailoring-liz-liu/?trackingId=iQpGPevfTpG5eIb5v1%2BaJA%3D%3D)
+- [Enhancing LLMs with Retrieval Augmented Generation](https://scale.com/blog/retrieval-augmented-generation-to-enhance-llms?utm_source=linkedin&utm_medium=organic-social&utm_campaign=rag-blog)
+- [Post by Justin Zhao, Foudning Engineer @ Predibase](https://www.linkedin.com/posts/justin-zhao_we-keep-hearing-questions-about-fine-tuning-activity-7159251147076067328-flhR?utm_source=share&utm_medium=member_desktop)
+- [Musings on building a Generative AI product - Linkedin Engineering](https://www.linkedin.com/blog/engineering/generative-ai/musings-on-building-a-generative-ai-product)
+
