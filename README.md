@@ -1,14 +1,12 @@
 # Large Language Models Interview Questions
-This repository contains interview questions about Large Language Models (LLMs). I'm basing it off of [Mastering LLM](https://www.masteringllm.com/course/llm-interview-questions-and-answers), credit to them for getting this project started, however, my contribution will be the answers.
-
-9 questions answered out of ??.
+This repository contains interview questions about Large Language Models (LLMs). I'm basing it off of [Mastering LLM](https://www.masteringllm.com/course/llm-interview-questions-and-answers), credit to them for getting this project started, however, my contribution will be the answers. This is still a work in progress, once I get it to a good place, I will open it to contributions.
 
 _Note:_ I started by writing up the answers, but realized soon it would be much better to cite references, so I will be doing that from now on. Consider this a resource collective of sorts.
 
 ## Table of Contents
 In the original material, the questions are divided into the following chapters:
-1. Road map
-2. Prompt engineering & basics of LLM
+1. ~~Road map~~
+2. ~~Prompt engineering & basics of LLM~~
 3. Retrieval augmented generation (RAG)
 4. Chunking strategies
 5. Embedding Models
@@ -88,6 +86,16 @@ This is a very loaded question, but here are some resources to explore this topi
 - [Exploring the Differences: Self-hosted vs. API-based AI Solutions](https://www.titanml.co/resources/exploring-the-differences-self-hosted-vs-api-based-ai-solutions)
 
 ## What are the different parameters that can be tuned in LLMs during inference?
+Parameters include:
+- Temperature
+- Top P
+- Max Length
+- Stop Sequences
+- Frequency Penalty
+- Presence Penalty
+
+Each of these parameters can be tuned to improve the performance of the model, and the quality of the generated text.
+
 Recommended reading:
 - [How to tune LLM Parameters for optimal performance](https://datasciencedojo.com/blog/tuning-optimizing-llm-parameters/)
 - [OpenAI Documentation](https://platform.openai.com/docs/guides/text-generation)
@@ -100,16 +108,18 @@ Some common decoding strategies include:
 - Greedy Decoding
 - Beam Search
 
-Fancy decoding strategies include Speculative Decoding which is a wild concept, it involves using a template from a weaker model to generate a response from a stronger model very quickly.
+Newer decoding strategies include Speculative Decoding (assisted decoding) which is a wild concept, it involves using a candidate tokens from a smaller (thus faster) model to generate a response from a bigger model very quickly.
 
 Recommended reading:
 - [Text generation strategies by HuggingFace](https://huggingface.co/docs/transformers/generation_strategies)
+- [Speculative Decoding Paper](https://arxiv.org/pdf/2211.17192.pdf)
 - [A Hitchhiker’s Guide to Speculative Decoding by Team PyTorch at IBM](https://pytorch.org/blog/hitchhikers-guide-speculative-decoding/)
 
 ## What are the stopping criteria for decoding in the context of LLMs?
 In the decoding process, LLMs autoregressively generate text one token at a time. There are several stopping criteria that can be used to determine when to stop generating text. Some common stopping criteria include:
 - Maximum Length: Stop generating text when the generated text reaches a certain length.
 - End of Sentence Token: Stop generating text when the model generates an end of sentence token.
+- Stop Sequences: Stop generating text when the model generates a predefined stop sequence.
 
 ## What are some elements that make up a prompt?
 ```
@@ -148,3 +158,40 @@ Recommended reading:
 - [Prompt Engineering Guide](https://www.promptingguide.ai/)
 - [OpenAI's Prompt Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering)
 - [Anthropic's Prompt Engineering Guide](https://docs.anthropic.com/en/docs/prompt-engineering)
+
+## Explain the concept of In-context Learning
+In-context learning is a very intuitive and easy to understand learning paradigm in Natural Language Processing. It encompasses concepts such as few-shot learning. It can be as easy as providing a few examples of the task you want the model to perform, and the model will learn from those examples and generate responses accordingly.
+
+To read about the concept in depth including the mathematics behind it, refer to the following slides from [COS 597G (Fall 2022): Understanding Large Language Models at Princeton University](https://www.cs.princeton.edu/courses/archive/fall22/cos597G/lectures/lec07.pdf)
+
+Recommended Reading:
+- [Understanding In-Context Learning](https://ai.stanford.edu/blog/understanding-incontext/)
+
+## When does In-context Learning fail?
+It has been shown that In-context Learning can only emerge when the models are scaled to a certain size, and when the models are trained on a diverse set of tasks. In-context learning can fail when the model is not able to perform complex reasoning tasks.
+
+Recommended Reading:
+- [Few-shot Prompting by Prompt Engineering Guide](https://www.promptingguide.ai/techniques/fewshot)
+
+## What would be a good methodology for designing prompts for a specific task?
+This is a very broad question, but the following will help you form a basic understanding of how to design prompts for a specific task:
+- [Best Practices for Prompt Engineering from OpenAI](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api)
+- [General Tips for Designing Prompts](https://www.promptingguide.ai/introduction/tips)
+
+## Explain the concept of hallucination in the context of LLMs
+```
+The term describes when LLMs produce text that is incorrect, makes no sense, or is unrelated to reality
+```
+Reference: [LLM Hallucination—Types, Causes, and Solution by Nexla](https://nexla.com/ai-infrastructure/llm-hallucination/)
+
+Recommended Reading:
+- [Hallucination (Artificial Intelligence) - Wikipedia](https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence))
+- [Hallucination is Inevitable: An Innate Limitation of Large Language Models](https://arxiv.org/pdf/2401.11817)
+- [A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions](https://arxiv.org/pdf/2311.05232)
+
+## What prompt engineering concept is known to enhance reasoning capabilities in LLMs?
+The concept of Chain-of-Thought Prompting is known to enhance reasoning capabilities in LLMs. This technique involves breaking down a complex task into a series of simpler tasks, and providing the model with the intermediate outputs of each task to guide it towards the final output.
+
+Recommended Reading:
+- [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903)
+- [Chain-of-Thought Prompting by Prompt Engineering Guide](https://www.promptingguide.ai/techniques/cot)
