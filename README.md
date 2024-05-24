@@ -162,9 +162,8 @@ Recommended reading:
 ## Explain the concept of In-context Learning
 In-context learning is a very intuitive and easy to understand learning paradigm in Natural Language Processing. It encompasses concepts such as few-shot learning. It can be as easy as providing a few examples of the task you want the model to perform, and the model will learn from those examples and generate responses accordingly.
 
-To read about the concept in depth including the mathematics behind it, refer to the following slides from [COS 597G (Fall 2022): Understanding Large Language Models at Princeton University](https://www.cs.princeton.edu/courses/archive/fall22/cos597G/lectures/lec07.pdf)
-
 Recommended Reading:
+- [Towards Understanding In-context Learning from COS 597G (Fall 2022): Understanding Large Language Models at Princeton University](https://www.cs.princeton.edu/courses/archive/fall22/cos597G/lectures/lec07.pdf)
 - [Understanding In-Context Learning](https://ai.stanford.edu/blog/understanding-incontext/)
 
 ## When does In-context Learning fail?
