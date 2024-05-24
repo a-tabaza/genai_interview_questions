@@ -3,6 +3,13 @@ This repository contains interview questions about Large Language Models (LLMs).
 
 _Note:_ I started by writing up the answers, but realized soon it would be much better to cite references, so I will be doing that from now on. Consider this a resource collective of sorts.
 
+## Preamble
+If you've reached the stage where you're interviewing for Generative AI roles, this will help you a lot. 
+
+If you're just getting started, my one and only piece of advice is:
+
+    Get comfortable reading papers, because there's so many papers. The papers never end.
+
 ## Table of Contents
 In the original material, the questions are divided into the following chapters:
 1. ~~Road map~~
