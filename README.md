@@ -85,7 +85,7 @@ Recommended reading (and watching):
 - [Summary of Tokenizers by HuggingFace](https://huggingface.co/docs/transformers/en/tokenizer_summary)
 - [Let's build the GPT Tokenizer by Andrej Karpathy](https://www.youtube.com/watch?v=zduSFxRajkE)
 
-## How do you estimate the cost of running a SaaS-based closed source LLM against an open-source LLM?
+## How do you estimate the cost of running an API based / closed source LLM vs. an open-source LLM (self-hosted)?
 This is a very loaded question, but here are some resources to explore this topic further:
 - [Using LLMs for Enterprise Use Cases: How Much Does It Really Cost?](https://www.titanml.co/resources/using-llms-for-enterprise-use-cases-how-much-does-it-really-cost)
 - [The Challenges of Self-Hosting Large Language Models](https://www.titanml.co/resources/the-challenges-of-self-hosting-large-language-models)
