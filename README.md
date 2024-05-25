@@ -16,20 +16,20 @@ If you're just getting started, my one and only piece of advice is:
 
 ## Table of Contents
 In the original material, the questions are divided into the following chapters:
-1. ~~Road map~~
-2. ~~Prompt engineering & basics of LLM~~
-3. ~~Retrieval augmented generation (RAG)~~
-4. Chunking strategies
+1. ~~Road Map~~
+2. ~~Prompt Engineering & The Basics of LLMs~~
+3. ~~Retrieval Augmented Generation (RAG)~~
+4. ~~Chunking Strategies~~
 5. Embedding Models
-6. Internal working of vector DB
-7. Advanced search algorithms
-8. Language models internal working
-9. Supervised fine-tuning of LLM
+6. Internal Workings of Vector Databases
+7. Advanced Search Algorithms
+8. Language Models Internal Workings
+9. Supervised Fine-tuning of LLMs
 10. Preference Alignment (RLHF/DPO)
-11. Evaluation of LLM system
-12. Hallucination control techniques
-13. Deployment of LLM
-14. Agent-based system
+11. Evaluation of LLM Systems
+12. Hallucination Control Techniques
+13. Deployment of LLMs
+14. Agent-based Systems
 15. Prompt Hacking
 16. Case Study & Scenario-based question
 
@@ -233,3 +233,40 @@ Recommended Reading (both sides of the argument):
 - [Post by Justin Zhao, Foudning Engineer @ Predibase](https://www.linkedin.com/posts/justin-zhao_we-keep-hearing-questions-about-fine-tuning-activity-7159251147076067328-flhR?utm_source=share&utm_medium=member_desktop)
 - [Musings on building a Generative AI product - Linkedin Engineering](https://www.linkedin.com/blog/engineering/generative-ai/musings-on-building-a-generative-ai-product)
 
+## Explain the concept of chunking and its importance to RAG systems
+Chunking text is the process of breaking down a large piece of text into smaller, more manageable chunks. In the context of RAG systems, chunking is important because it allows the retriever component to efficiently retrieve relevant information from the knowledge base. By breaking down the query into smaller chunks, the retriever can focus on retrieving information that is relevant to each chunk, which can improve the accuracy and efficiency of the retrieval process.
+
+During the training of embedding models, which are often used as retrievers, positive and negative pairs of text are used to indicate what pieces of text correspond to each other, examples include the titles, headers and subheaders on a Wikipedia page, and their corresponding paragraphs, reddit posts and their top voted comments, etc.
+
+A user query is often embedded, and an index is queried, if the index had entire documents contained within it to be queried for top-k hits, a retreiver would not be able to return the most relevant information, as the documents to be queried would be too large to comprehend.
+
+To summarize, we chunk text to:
+- Break down large pieces of text into smaller, more manageable chunks, where we ideally wish to have each chunk contain defined pieces of information we can query.
+- Embedding models often have fixed context lengths, we cannot embed an entire book.
+- Intuitively, when we search for information, we know the book we want to use as reference (corresponding to an index here), we'd use chapters and subchapters (our chunks) to find the information we need.
+- Embedding models compress semantic information into a lower dimensional space, as the size of the text increases, the amount of information that is lost increases, and the model's ability to retrieve relevant information decreases.
+
+## Explain the intuition between chunk sizes using an example
+Suppose we have a book, containing 24 chapters, a total of 240 pages.
+This would mean that each chapter contains 10 pages, and each page contains 3 paragraphs.
+Let's suppose that each paragraph contains 5 sentences, and each sentence contains 10 words.
+In total, we have: 10 * 5 * 3 * 10 = 1500 words per chapter. 
+We also have 1500 * 24 = 36000 words in the entire book.
+For simplicity, our tokenizer is a white space tokenizer, and each word is a token.
+
+We know that at most, we have an embedding model capable of embedding 8192 tokens:
+- If we were to embed the entire book, we would have to chunk the book into 5 chunks. Each chunk would contain 5 chapters. This is a tremendous amount of information to embed, and the model would not be able to retrieve relevant information efficiently.
+- We can embed each chapter individually, this would mean that each chapter would yeild 1500 tokens, which is well within the model's capacity to embed. But we know that chapters contain multiple topics, and we would not be able to retrieve the most relevant information.
+- We can embed each paragraph individually, this would mean that each paragraph would yeild 150 tokens, which is well within the model's capacity to embed. This is a good balance between the two extremes, as paragraphs often contain a single topic, and we would be able to retrieve the most relevant information, however, what if the flow of information is not linear, and the information we need is spread across multiple paragraphs?
+- We can embed each sentence individually, but here we risk losing the context of the paragraph, and the model would not be able to retrieve the most relevant information.
+
+All of this is to illustrate that there is no fixed way to chunk text, and the best way to chunk text is to experiment and see what works best for your use case.
+
+## What are the different chunking strategies used in RAG systems and how do you evaluate your chunking strategy?
+An authorotative source on this topic is the excellent [notebook](https://github.com/FullStackRetrieval-com/RetrievalTutorials/blob/main/tutorials/LevelsOfTextSplitting/5_Levels_Of_Text_Splitting.ipynb) and accompyaning [video](https://www.youtube.com/watch?v=8OJC21T2SL4) by [Greg Kamradt](https://www.youtube.com/@DataIndependent), in which he explains the different levels of text splitting. 
+
+The notebook also goes over ways to evaluate and vizualize the different levels of text splitting, and how to use them in a retrieval system.
+
+Recommended Viewing:
+- [ChunkViz: A Visual Exploration of Text Chunking](https://chunkviz.up.railway.app/)
+- [RAGAS: An Evaluation Framework for Retrieval Augmented Generation](https://github.com/explodinggradients/ragas)
