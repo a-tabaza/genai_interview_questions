@@ -264,7 +264,7 @@ We know that at most, we have an embedding model capable of embedding 8192 token
 All of this is to illustrate that there is no fixed way to chunk text, and the best way to chunk text is to experiment and see what works best for your use case.
 
 ## What are the different chunking strategies used in RAG systems and how do you evaluate your chunking strategy?
-An authorotative source on this topic is the excellent [notebook](https://github.com/FullStackRetrieval-com/RetrievalTutorials/blob/main/tutorials/LevelsOfTextSplitting/5_Levels_Of_Text_Splitting.ipynb) and accompyaning [video](https://www.youtube.com/watch?v=8OJC21T2SL4) by [Greg Kamradt](https://www.youtube.com/@DataIndependent), in which he explains the different levels of text splitting. 
+An authorotative source on this topic is the excellent [notebook](https://github.com/FullStackRetrieval-com/RetrievalTutorials/blob/main/tutorials/LevelsOfTextSplitting/5_Levels_Of_Text_Splitting.ipynb) and accompyaning [video](https://www.youtube.com/watch?v=8OJC21T2SL4) by [Greg Kamradt](https://www.youtube.com/@DataIndependent), in which they explain the different levels of text splitting. 
 
 The notebook also goes over ways to evaluate and vizualize the different levels of text splitting, and how to use them in a retrieval system.
 
