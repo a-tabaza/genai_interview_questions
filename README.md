@@ -255,9 +255,10 @@ We also have 1500 * 24 = 36000 words in the entire book.
 For simplicity, our tokenizer is a white space tokenizer, and each word is a token.
 
 We know that at most, we have an embedding model capable of embedding 8192 tokens:
-- If we were to embed the entire book, we would have to chunk the book into 5 chunks. Each chunk would contain 5 chapters. This is a tremendous amount of information to embed, and the model would not be able to retrieve relevant information efficiently.
+- If we were to embed the entire book, we would have to chunk the book into 5 chunks. Each chunk would contain 5 chapters, with 7200 tokens. This is a tremendous amount of information to embed, and the model would not be able to retrieve relevant information efficiently.
 - We can embed each chapter individually, this would mean that each chapter would yeild 1500 tokens, which is well within the model's capacity to embed. But we know that chapters contain multiple topics, and we would not be able to retrieve the most relevant information.
-- We can embed each paragraph individually, this would mean that each paragraph would yeild 150 tokens, which is well within the model's capacity to embed. This is a good balance between the two extremes, as paragraphs often contain a single topic, and we would be able to retrieve the most relevant information, however, what if the flow of information is not linear, and the information we need is spread across multiple paragraphs?
+- We can embed each page, resulting in 450 tokens per page, this is a good balance between the two extremes, as pages often contain a single topic, and we would be able to retrieve the most relevant information, however, what if the information we need is spread across multiple pages?
+- We can embed each paragraph individually, this would mean that each paragraph would yeild 150 tokens, which is well within the model's capacity to embed. TParagraphs often contain a single topic, and we would be able to retrieve the most relevant information, however, what if the flow of information is not linear, and the information we need is spread across multiple paragraphs, and we need to aggregate it?
 - We can embed each sentence individually, but here we risk losing the context of the paragraph, and the model would not be able to retrieve the most relevant information.
 
 All of this is to illustrate that there is no fixed way to chunk text, and the best way to chunk text is to experiment and see what works best for your use case.
