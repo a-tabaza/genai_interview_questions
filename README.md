@@ -246,7 +246,7 @@ To summarize, we chunk text to:
 - Intuitively, when we search for information, we know the book we want to use as reference (corresponding to an index here), we'd use chapters and subchapters (our chunks) to find the information we need.
 - Embedding models compress semantic information into a lower dimensional space, as the size of the text increases, the amount of information that is lost increases, and the model's ability to retrieve relevant information decreases.
 
-## Explain the intuition between chunk sizes using an example
+## Explain the intuition behind chunk sizes using an example
 Suppose we have a book, containing 24 chapters, a total of 240 pages.
 This would mean that each chapter contains 10 pages, and each page contains 3 paragraphs.
 Let's suppose that each paragraph contains 5 sentences, and each sentence contains 10 words.
