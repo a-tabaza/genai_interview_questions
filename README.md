@@ -226,7 +226,7 @@ A full solution that utilizes RAG to answer a complex question based on a knowle
 - Generation: the generator component generates text based on the retrieved information.
 - Post-processing: the generated text is post-processed to ensure factuality and integrity.
 
-## Discuss the case of RAG vs. Full Fine-tuning
+## Discuss the case for RAG vs. Full Fine-tuning
 Recommended Reading (both sides of the argument):
 - [Fine-Tuning vs. Retrieval Augmented Generation (RAG): Tailoring Large Language Models to Your Needs](https://www.linkedin.com/pulse/fine-tuning-vs-retrieval-augmented-generation-rag-tailoring-liz-liu/?trackingId=iQpGPevfTpG5eIb5v1%2BaJA%3D%3D)
 - [Enhancing LLMs with Retrieval Augmented Generation](https://scale.com/blog/retrieval-augmented-generation-to-enhance-llms?utm_source=linkedin&utm_medium=organic-social&utm_campaign=rag-blog)
