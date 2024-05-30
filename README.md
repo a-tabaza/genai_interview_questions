@@ -1,5 +1,4 @@
-# Large Language Models Interview Questions
-This repository contains interview questions about Large Language Models (LLMs). 
+This a project I'm working on right now, I'm trying to compile a list of questions and answers for Generative AI interviews.
 
 I am using this reference: [Mastering LLM](https://www.masteringllm.com/course/llm-interview-questions-and-answers) as the base, credit to them for compiling it, however, I am taking _alot_ of liberies with editing the questions, as well as the answers, they are completely my own.
 
