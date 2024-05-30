@@ -20,7 +20,7 @@ In the original material, the questions are divided into the following chapters:
 2. ~~Prompt Engineering & The Basics of LLMs~~
 3. ~~Retrieval Augmented Generation (RAG)~~
 4. ~~Chunking Strategies~~
-5. Embedding Models
+5. ~~Embedding Models~~
 6. Internal Workings of Vector Databases
 7. Advanced Search Algorithms
 8. Language Models Internal Workings
@@ -271,3 +271,80 @@ The notebook also goes over ways to evaluate and vizualize the different levels 
 Recommended Viewing:
 - [ChunkViz: A Visual Exploration of Text Chunking](https://chunkviz.up.railway.app/)
 - [RAGAS: An Evaluation Framework for Retrieval Augmented Generation](https://github.com/explodinggradients/ragas)
+
+## Explain the concept of a vector embedding
+Vector embeddings are the mapping of textual semantics into an N-dimensional space where vectors represent text, within the vector space, similar text is represented by similar vectors.
+
+Recommended Reading:
+- [What are Vector Embeddings?](https://www.elastic.co/what-is/vector-embedding)
+
+## What are embedding models?
+Embedding models are Language Models trained for the purpose of vectorizing text, they are often BERT derivatives, and are trained on a large corpus of text to learn the semantics of the text, recent trends however also show it is possible to use much larger language models for this purpose such as Mistral or Llama.
+
+Recommended Reading:
+- [Quickstart for SentenceTransformers](https://www.sbert.net/docs/quickstart.html)
+
+## How do embedding models work in the context of systems with LLMs?
+Embedding models are often used as retrievers, to utilize their retrieval capabilities, semantic textual similarity is used where in vectors produced by the models are measured in similarity using metrics such as dot product, cosine similarity, etc.
+
+- [Retriver Documentation by LlamaIndex](https://docs.llamaindex.ai/en/stable/module_guides/querying/retriever/)
+
+## What are the different types of text embeddings?
+- Multi Vector Dense Models (ColBERT)
+- Single Vector Dense Models (BERT with Pooling)
+- Sparse Vectors (SPLADE)
+
+Recommended Reading:
+- [Okapi BM25](https://en.wikipedia.org/wiki/Okapi_BM25)
+- [Text Embeddings by Weakly-Supervised Contrastive Pre-training](https://arxiv.org/pdf/2212.03533)
+- [ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT](https://arxiv.org/abs/2004.12832)
+- [SPLADE: Sparse Lexical and Expansion Model for First Stage Ranking](https://arxiv.org/abs/2107.05720)
+
+## How do you train an embedding model?
+Embeddings models are trained with contrastive loss, ranging from Softmax contrastive loss and up to more complex loss functions such as InfoNCE, and Multiple Negative Ranking Loss. A process known as hard negative mining is utilized during training as well.
+
+Recommended Reading:
+- [Representation Learning with Contrastive Predictive Coding](https://arxiv.org/abs/1807.03748)
+- [Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/abs/1908.10084)
+- [SentenceTransformer Losses Documentation](https://www.sbert.net/docs/sentence_transformer/loss_overview.html)
+- [Hard Negative Mining Used by BGE Text Embedding Models](https://github.com/FlagOpen/FlagEmbedding/blob/master/FlagEmbedding/baai_general_embedding/finetune/hn_mine.py)
+
+## Explain the concept of contrastive learning in the context of embedding models
+Contrastive learning is a technique used to train embedding models, it involves learning to differentiate between positive and negative pairs of text. The model is trained to maximize the similarity between positive pairs and minimize the similarity between negative pairs.
+
+Recommended Reading:
+- [SentenceTransformers Losses](https://github.com/UKPLab/sentence-transformers/tree/master/sentence_transformers/losses)
+
+## Explain the intuition behind single vector dense represenations
+Single vector dense represenations are often the norm in text embedding models, they're usually produced by pooling the contextualized embeddings after a forward pass from the model, pooling techniques include mean pooling, max pooling, and CLS token pooling. 
+
+## Explain the intuition behind multi vector dense represenations
+Multi vector dense represenations have shown to produce superior results to single vector dense represenations, they are produced by skipping the pooling step and using the contextualized embeddings in the form of a matrix, the query and document embeddings are then used to calculate the similarity between the two, models such as ColBERT have shown to produce superior results to single vector dense represenations. 
+An operator such as MaxSim is used to calculate the similarity between the query and document embeddings.
+
+Recommended Reading:
+- [ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT](https://arxiv.org/abs/2004.12832)
+
+## Explain the intuition behind sparse represenations
+Sparse text represenations are the oldest form of vector space models in information retrieval, they are usually based on TF-IDF derivatives and algorithms such as BM25, and remain a baseline for text retrieval systems. Their sparsity stems from the fact that the dimension of the embeddings often corresponds to the size of the vocabulary.
+
+Recommended Reading:
+- [Okapi BM25](https://en.wikipedia.org/wiki/Okapi_BM25)
+- [SPLADE: Sparse Lexical and Expansion Model for First Stage Ranking](https://arxiv.org/abs/2107.05720)
+
+## Elaborate on why sparse text embeddings are more efficient than dense text embeddings
+Sparse text embeddings allow for the use of inverted indices during retrieval.
+
+Recommended Reading:
+- [Inverted Indexes](https://en.wikipedia.org/wiki/Inverted_index)
+
+## How do you benchmark the performance of an embedding model?
+Metrics for benchmarking the performance of an embedding model include:
+- Mean Reciprocal Rank (MRR)
+- Normalized Discounted Cumulative Gain (NDCG)
+- Hit Rate
+- Precision
+- Recall
+
+Recommended Reading:
+- [Evaluation measures (information retrieval)](https://en.wikipedia.org/wiki/Evaluation_measures_(information_retrieval))
