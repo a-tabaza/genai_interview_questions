@@ -290,9 +290,12 @@ Embedding models are often used as retrievers, to utilize their retrieval capabi
 - [Retriver Documentation by LlamaIndex](https://docs.llamaindex.ai/en/stable/module_guides/querying/retriever/)
 
 ## What are the different types of text embeddings?
-- Multi Vector Dense Models (ColBERT)
-- Single Vector Dense Models (BERT with Pooling)
-- Sparse Vectors (SPLADE)
+- Multi Vector Dense Models (e.g. ColBERT)
+- Single Vector Dense Models (e.g. BERT with Pooling)
+- Sparse Vectors (e.g. SPLADE)
+
+Recommended Reading:
+- [BGE M3-Embedding: Multi-Lingual, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation](https://arxiv.org/pdf/2402.03216)
 
 Recommended Reading:
 - [Okapi BM25](https://en.wikipedia.org/wiki/Okapi_BM25)
