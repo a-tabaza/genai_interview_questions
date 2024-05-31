@@ -1,8 +1,8 @@
 This a project I'm working on right now, I'm trying to compile a list of questions and answers for Generative AI interviews.
 
-I am using this [reference](https://www.masteringllm.com/course/llm-interview-questions-and-answers) as the base, credit to them for compiling it, however, I am taking _alot_ of liberies with editing the questions, as well as the answers, they are completely my own.
+I'm using this [reference](https://www.masteringllm.com/course/llm-interview-questions-and-answers) as the base, credit to them for compiling it, however, I am taking _alot_ of liberies with editing the questions, as well as the answers, they are completely my own.
 
-_Note:_ I am trying to keep the answers I write myself to a minumum, since I am in no way or form an authoritative source on this topic. I will be providing references to the best of my ability.
+_Note:_ I'm trying to keep the answers I write myself to a minumum, since I am in no way or form an authoritative source on this topic. I will be providing references to the best of my ability.
 
 I also plan to expand this to Generative AI in general.
 
@@ -11,28 +11,14 @@ If you've reached the stage where you're interviewing for Generative AI roles, t
 
 If you're just getting started, my one and only piece of advice is:
 
-    Get comfortable reading papers, because there's so many papers. The papers never end.
+    Get comfortable reading papers, because there's so many papers. They never end.
 
 ## Table of Contents
-In the original material, the questions are divided into the following chapters:
-1. ~~Road Map~~
-2. ~~Prompt Engineering & The Basics of LLMs~~
-3. ~~Retrieval Augmented Generation (RAG)~~
-4. ~~Chunking Strategies~~
-5. ~~Embedding Models~~
-6. Internal Workings of Vector Databases
-7. Advanced Search Algorithms
-8. Language Models Internal Workings
-9. Supervised Fine-tuning of LLMs
-10. Preference Alignment (RLHF/DPO)
-11. Evaluation of LLM Systems
-12. Hallucination Control Techniques
-13. Deployment of LLMs
-14. Agent-based Systems
-15. Prompt Hacking
-16. Case Study & Scenario-based question
 
-I will be loosly following the same order.
+[1. LLM and Prompting Basics](#llm-and-prompting-basics)  
+[2. Retrieval Augmented Generation (RAG)](#retrieval-augmented-generation-rag)  
+[3. Chunking Strategies](#chunking-strategies)  
+[4. Embedding Models for Retrieval](#embedding-models-for-retrieval)
 
 ## LLM and Prompting Basics
 
