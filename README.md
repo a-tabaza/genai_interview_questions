@@ -174,6 +174,7 @@ Recommended Reading:
 This is a very broad question, but the following will help you form a basic understanding of how to design prompts for a specific task:
 - [Best Practices for Prompt Engineering from OpenAI](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api)
 - [General Tips for Designing Prompts](https://www.promptingguide.ai/introduction/tips)
+- [Principled Instructions Are All You Need for Questioning LLaMA-1/2, GPT-3.5/4](https://arxiv.org/abs/2312.16171v2)
 
 ### Explain the concept of hallucination in the context of LLMs
 ```
