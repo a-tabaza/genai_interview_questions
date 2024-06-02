@@ -176,7 +176,7 @@ This is a very broad question, but the following will help you form a basic unde
 - [Best Practices for Prompt Engineering from OpenAI](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api)
 - [General Tips for Designing Prompts](https://www.promptingguide.ai/introduction/tips)
 - [Principled Instructions Are All You Need for Questioning LLaMA-1/2, GPT-3.5/4](https://arxiv.org/abs/2312.16171v2)
-
+- [Prompting Fundamentals and How to Apply them Effectively by Eugene Yan (Amazon)](https://eugeneyan.com/writing/prompting/?es_id=3eb4c98a3b)
 ### Explain the concept of hallucination in the context of LLMs
 ```
 The term describes when LLMs produce text that is incorrect, makes no sense, or is unrelated to reality
@@ -301,6 +301,7 @@ Recommended Reading:
 Embeddings models are trained with contrastive loss, ranging from Softmax contrastive loss and up to more complex loss functions such as InfoNCE, and Multiple Negative Ranking Loss. A process known as hard negative mining is utilized during training as well.
 
 Recommended Reading:
+- [Contrastive Representation Learning by Lilian Weng (OpenAI)](https://lilianweng.github.io/posts/2021-05-31-contrastive/)
 - [Representation Learning with Contrastive Predictive Coding](https://arxiv.org/abs/1807.03748)
 - [Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/abs/1908.10084)
 - [SentenceTransformer Losses Documentation](https://www.sbert.net/docs/sentence_transformer/loss_overview.html)
