@@ -222,6 +222,7 @@ Recommended Reading (both sides of the argument):
 - [Enhancing LLMs with Retrieval Augmented Generation](https://scale.com/blog/retrieval-augmented-generation-to-enhance-llms?utm_source=linkedin&utm_medium=organic-social&utm_campaign=rag-blog)
 - [Post by Justin Zhao, Foudning Engineer @ Predibase](https://www.linkedin.com/posts/justin-zhao_we-keep-hearing-questions-about-fine-tuning-activity-7159251147076067328-flhR?utm_source=share&utm_medium=member_desktop)
 - [Musings on building a Generative AI product - Linkedin Engineering](https://www.linkedin.com/blog/engineering/generative-ai/musings-on-building-a-generative-ai-product)
+- [RAG vs. Fine-tuning by Armand Ruiz, VP of Product, AI Platform @ IBM](https://www.linkedin.com/posts/armand-ruiz_rag-vs-fine-tuning-its-not-an-eitheror-activity-7202987364254638081-YpvE/?utm_source=share&utm_medium=member_android)
 
 ## Chunking Strategies
 
