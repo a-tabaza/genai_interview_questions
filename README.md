@@ -2,7 +2,7 @@ This a project I'm working on right now, I'm trying to compile a list of questio
 
 I'm using this [reference](https://www.masteringllm.com/course/llm-interview-questions-and-answers) as the base, credit to them for compiling it, however, I am taking _alot_ of liberies with editing the questions, as well as the answers, they are completely my own.
 
-_Note:_ I'm trying to keep the answers I write myself to a minumum, since I am in no way or form an authoritative source on this topic. I will be providing references to the best of my ability.
+_Note:_ I'm trying to keep the answers I write myself to a minumum, since I am in no way or form an authoritative source on this topic. I will be providing references to the best of my ability. I refriained from adding any sort of visual aid for readablity and to keep the complexity of maintenance to a minimum. The resources and references I cite contain a wealth of information, mostly with visuals.
 
 I also plan to expand this to Generative AI in general.
 
@@ -117,9 +117,9 @@ Recommended reading:
 
 ### What are the stopping criteria for decoding in the context of LLMs?
 In the decoding process, LLMs autoregressively generate text one token at a time. There are several stopping criteria that can be used to determine when to stop generating text. Some common stopping criteria include:
-- Maximum Length: Stop generating text when the generated text reaches a certain length.
-- End of Sentence Token: Stop generating text when the model generates an end of sentence token.
-- Stop Sequences: Stop generating text when the model generates a predefined stop sequence.
+- **Maximum Length:** Stop generating text when the generated text reaches a certain length.
+- **End of Sentence Token:** Stop generating text when the model generates an end of sentence token.
+- **Stop Sequences:** Stop generating text when the model generates a predefined stop sequence.
 
 ### What are some elements that make up a prompt?
 ```
@@ -203,8 +203,8 @@ Retrieval Augmented Generation (RAG) is a common design pattern for grounding LL
 
 ### Explain the intuition and methodology behind Retrieval Augmented Generation (RAG)
 Retrieval Augmented Generation (RAG) is composed of two main component:
-- A retriever: This component is responsible for retrieving relevant information from a knowledge base given a query.
-- A generator: This component is responsible for generating text based on the retrieved information.
+- **A retriever:** This component is responsible for retrieving relevant information from a knowledge base given a query.
+- **A generator:** This component is responsible for generating text based on the retrieved information.
 
 The intuition behind RAG is that by combining the strengths of retrieval-based and generation-based models, we can create a system that is capable of generating text that is grounded in facts, thus limiting hallucination.
 
@@ -212,11 +212,11 @@ RAG is often the go-to technique for answering complex questions based on a know
 
 ### Provide a high-level overview of the steps involved in implementing a full solution that utilizes RAG to answer a complex question based on a knowledge base
 A full solution that utilizes RAG to answer a complex question based on a knowledge base would involve the following steps:
-- Data Ingestion: documents or data streams that compromise the knowledge base are ingested into a data pipeline and processed in a way that is suitable for retrieval.
-- Indexing: the processed data is indexed in a way that allows for efficient retrieval.
-- Retrieval: given a query, the retriever component retrieves relevant information from the knowledge base.
-- Generation: the generator component generates text based on the retrieved information.
-- Post-processing: the generated text is post-processed to ensure factuality and integrity.
+- **Data Ingestion:** documents or data streams that compromise the knowledge base are ingested into a data pipeline and processed in a way that is suitable for retrieval.
+- **Indexing:** the processed data is indexed in a way that allows for efficient retrieval.
+- **Retrieval:** given a query, the retriever component retrieves relevant information from the knowledge base.
+- **Generation:** the generator component generates text based on the retrieved information.
+- **Post-processing:** the generated text is post-processed to ensure factuality and integrity.
 
 ### Discuss the case for RAG vs. Full Fine-tuning
 Recommended Reading (both sides of the argument):
@@ -235,8 +235,8 @@ During the training of embedding models, which are often used as retrievers, pos
 
 A user query is often embedded, and an index is queried, if the index had entire documents contained within it to be queried for top-k hits, a retreiver would not be able to return the most relevant information, as the documents to be queried would be too large to comprehend.
 
-To summarize, we chunk text to:
-- Break down large pieces of text into smaller, more manageable chunks, where we ideally wish to have each chunk contain defined pieces of information we can query.
+To summarize, we chunk text because:
+- We need to break down large pieces of text into smaller, more manageable chunks, where we ideally wish to have each chunk contain defined pieces of information we can query.
 - Embedding models often have fixed context lengths, we cannot embed an entire book.
 - Intuitively, when we search for information, we know the book we want to use as reference (corresponding to an index here), we'd use chapters and subchapters (our chunks) to find the information we need.
 - Embedding models compress semantic information into a lower dimensional space, as the size of the text increases, the amount of information that is lost increases, and the model's ability to retrieve relevant information decreases.
@@ -287,9 +287,9 @@ Embedding models are often used as retrievers, to utilize their retrieval capabi
 - [Retriver Documentation by LlamaIndex](https://docs.llamaindex.ai/en/stable/module_guides/querying/retriever/)
 
 ### What are the different types of text embeddings?
-- Multi Vector Dense Models (e.g. ColBERT)
-- Single Vector Dense Models (e.g. BERT with Pooling)
-- Sparse Vectors (e.g. SPLADE)
+- Dense Multi-vectors (e.g. ColBERT)
+- Dense Single-vectors (e.g. BERT with Pooling)
+- Sparse Single-vectors (e.g. BM25 or SPLADE)
 
 Recommended Reading:
 - [Okapi BM25](https://en.wikipedia.org/wiki/Okapi_BM25)
@@ -338,16 +338,16 @@ Recommended Reading:
 
 ### How do you benchmark the performance of an embedding model?
 Metrics for benchmarking the performance of an embedding model include:
+- Recall
+- Precision
+- Hit Rate
 - Mean Reciprocal Rank (MRR)
 - Normalized Discounted Cumulative Gain (NDCG)
-- Hit Rate
-- Precision
-- Recall
 
 Recommended Reading:
 - [Evaluation measures (information retrieval)](https://en.wikipedia.org/wiki/Evaluation_measures_(information_retrieval))
 
-## Vector, Retrieval Databases and Indexes
+## Vector Retrieval, Databases and Indexes
 
 ### Quintessential Recommended Reading on Vector Retrieval
 - [Foundations of Vector Retrieval by Sebastian Bruch](https://arxiv.org/abs/2401.09350)
@@ -371,8 +371,8 @@ A vector database usually contains indexes of vectors, these indexes contain mat
 
 ### What are the different strategies for searching in a vector database or index?
 Search strategies in vector databases include:
-- Exhaustive Search: This strategy involves comparing the query vector with every vector in the database to find the most similar vectors.
-- Approximate Search: This strategy involves using approximate algorithms such as Heirarchal Navigable Small Worlds (HNSW) to find the most similar vectors. At the time of indexing, a graph is built, and the query vector is traversed through the graph to find the most similar vectors.
+- **Exhaustive Search:** This strategy involves comparing the query vector with every vector in the database to find the most similar vectors.
+- **Approximate Search:** This strategy involves using approximate algorithms such as Heirarchal Navigable Small Worlds (HNSW) to find the most similar vectors. At the time of indexing, a graph is built, and the query vector is traversed through the graph to find the most similar vectors.
 
 Recommended Reading:
 - [Foundations of Vector Retrieval by Sebastian Bruch, Part II Retrieval Algorithms](https://arxiv.org/abs/2401.09350)
@@ -411,10 +411,10 @@ Recommended Reading:
 
 ### Explain the concept of product quantization within the context of vector retrieval
     In short, PQ is the process of:
-    - Taking a big, high-dimensional vector,
-    - Splitting it into equally sized chunks — our subvectors,
-    - Assigning each of these subvectors to its nearest centroid (also called reproduction/reconstruction values),
-    - Replacing these centroid values with unique IDs — each ID represents a centroid
+    1. Taking a big, high-dimensional vector,
+    2. Splitting it into equally sized chunks — our subvectors,
+    3. Assigning each of these subvectors to its nearest centroid (also called reproduction/reconstruction values),
+    4. Replacing these centroid values with unique IDs — each ID represents a centroid
 
 Reference: [Product Quantization](https://www.pinecone.io/learn/series/faiss/product-quantization/)
 
@@ -430,7 +430,7 @@ Recommended Reading:
 - [Nearest Neighbor Indexes for Similarity Search](https://www.pinecone.io/learn/series/faiss/vector-indexes)
 
 ### Explain the concept of Hierarchical Navigable Small Worlds (HNSW) within the context of vector retrieval
-HNSW is often considered the state-of-the-art in vector retrieval, it is a graph-based algorithm that builds a graph of the vectors, and uses it to perform approximate nearest neighbor search.
+Hierarchical Navigable Small Worlds (HNSW) is often considered the state-of-the-art in vector retrieval, it is a graph-based algorithm that builds a graph of the vectors, and uses it to perform approximate nearest neighbor search.
 
 Recommended Reading:
 - [Hierarchical Navigable Small Worlds - Wikipedia](https://en.wikipedia.org/wiki/Hierarchical_navigable_small_world)
