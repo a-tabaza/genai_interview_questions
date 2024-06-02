@@ -19,6 +19,7 @@ If you're just getting started, my one and only piece of advice is:
 [2. Retrieval Augmented Generation (RAG)](#retrieval-augmented-generation-rag)  
 [3. Chunking Strategies](#chunking-strategies)  
 [4. Embedding Models for Retrieval](#embedding-models-for-retrieval)
+[5. The Internal Workings of Vector Databases and Indexes](#the-internal-workings-of-vector-databases-and-indexes)
 
 ## LLM and Prompting Basics
 
@@ -345,7 +346,11 @@ Metrics for benchmarking the performance of an embedding model include:
 Recommended Reading:
 - [Evaluation measures (information retrieval)](https://en.wikipedia.org/wiki/Evaluation_measures_(information_retrieval))
 
-## The Internal Workings of Vector Databases
+## The Internal Workings of Vector Databases and Indexes
+
+### Quintessential Recommended Reading on Vector Retrieval
+- [Foundations of Vector Retrieval by Sebastian Bruch](https://arxiv.org/abs/2401.09350)
+- [Faiss: The Missing Manual](https://www.pinecone.io/learn/series/faiss/)
 
 ### What is a vector database?
 A vector database is a database that is optimized for storing and querying vector data. It allows for efficient storage and retrieval of vector embeddings, and is often used in applications that require semantic similarity search.
@@ -388,3 +393,47 @@ Recommended Reading:
 ### Compare between various vector databases and indexes based on a set of criteria, and decide which one is best for a given use case
 This is obviously a very loaded question, but here are some resources to explore this topic further:
 - [Vector Database Feature Matrix by Superlinked](https://superlinked.com/vector-db-comparison?utm_source=reddit&utm_medium=social&utm_campaign=vdb_launch)
+
+### Explain the concept of quantization in the context of vectors
+    Vector quantization, also called "block quantization" or "pattern matching quantization" is often used in lossy data compression. It works by encoding values from a multidimensional vector space into a finite set of values from a discrete subspace of lower dimension. 
+
+Reference: [Vector Quantization](https://en.wikipedia.org/wiki/Vector_quantization)
+
+### Explain the concept of locality-sensitive hashing (LSH) within the context of vector retrieval
+    One general approach to LSH is to “hash” items several times, in such a way that similar items are more likely to be hashed to the same bucket than dissimilar items are.
+
+Reference: [Mining of Massive Datasets, 3rd Edition, Chapter 3, Section 3.4.1](http://mmds.org/)
+
+Recommended Reading:
+- [Locality-Sensitive Hashing](https://en.wikipedia.org/wiki/Locality-sensitive_hashing)
+- [Locality Sensitive Hashing (LSH): The Illustrated Guide](https://www.pinecone.io/learn/series/faiss/locality-sensitive-hashing/)
+
+### Explain the concept of product quantization within the context of vector retrieval
+    In short, PQ is the process of:
+    - Taking a big, high-dimensional vector,
+    - Splitting it into equally sized chunks — our subvectors,
+    - Assigning each of these subvectors to its nearest centroid (also called reproduction/reconstruction values),
+    - Replacing these centroid values with unique IDs — each ID represents a centroid
+
+Reference: [Product Quantization](https://www.pinecone.io/learn/series/faiss/product-quantization/)
+
+Recommended Reading:
+- [Product Quantization for Nearest Neighbor Search](https://www.researchgate.net/publication/47815472_Product_Quantization_for_Nearest_Neighbor_Search)
+
+### Explain the concept of inverted indices within the context of vector retrieval
+    The Inverted File Index (IVF) index consists of search scope reduction through clustering. It’s a very popular index as it’s easy to use, with high search-quality and reasonable search-speed.
+
+Reference: [Inverted File Index](https://www.pinecone.io/learn/series/faiss/vector-indexes/#Inverted-File-Index)
+
+Recommended Reading:
+- [Nearest Neighbor Indexes for Similarity Search](https://www.pinecone.io/learn/series/faiss/vector-indexes)
+
+### Explain the concept of Hierarchical Navigable Small Worlds (HNSW) within the context of vector retrieval
+HNSW is often considered the state-of-the-art in vector retrieval, it is a graph-based algorithm that builds a graph of the vectors, and uses it to perform approximate nearest neighbor search.
+
+Recommended Reading:
+- [Hierarchical Navigable Small Worlds - Wikipedia](https://en.wikipedia.org/wiki/Hierarchical_navigable_small_world)
+- [Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs](https://arxiv.org/abs/1603.09320)
+- [Hierarchical Navigable Small Worlds - Faiss: The Missing Manual](https://www.pinecone.io/learn/series/faiss/hnsw/)
+
+
