@@ -18,8 +18,8 @@ If you're just getting started, my one and only piece of advice is:
 [1. LLM and Prompting Basics](#llm-and-prompting-basics)  
 [2. Retrieval Augmented Generation (RAG)](#retrieval-augmented-generation-rag)  
 [3. Chunking Strategies](#chunking-strategies)  
-[4. Embedding Models for Retrieval](#embedding-models-for-retrieval)
-[5. The Internal Workings of Vector Databases and Indexes](#the-internal-workings-of-vector-databases-and-indexes)
+[4. Embedding Models for Retrieval](#embedding-models-for-retrieval)    
+[5. Vector Retrieval, Databases and Indexes](#the-internal-workings-of-vector-databases-and-indexes)
 
 ## LLM and Prompting Basics
 
@@ -346,7 +346,7 @@ Metrics for benchmarking the performance of an embedding model include:
 Recommended Reading:
 - [Evaluation measures (information retrieval)](https://en.wikipedia.org/wiki/Evaluation_measures_(information_retrieval))
 
-## The Internal Workings of Vector Databases and Indexes
+## Vector, Retrieval Databases and Indexes
 
 ### Quintessential Recommended Reading on Vector Retrieval
 - [Foundations of Vector Retrieval by Sebastian Bruch](https://arxiv.org/abs/2401.09350)
