@@ -384,3 +384,7 @@ Recommended Reading:
 - [Foundations of Vector Retrieval by Sebastian Bruch, Part II Retrieval Algorithms, Chapter 7 Clustering](https://arxiv.org/abs/2401.09350)
 - [Hierarchical Navigable Small Worlds](https://en.wikipedia.org/wiki/Hierarchical_navigable_small_world)
 - [Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs](https://arxiv.org/abs/1603.09320)
+
+### Compare between various vector databases and indexes based on a set of criteria, and decide which one is best for a given use case
+This is obviously a very loaded question, but here are some resources to explore this topic further:
+- [Vector Database Feature Matrix by Superlinked](https://superlinked.com/vector-db-comparison?utm_source=reddit&utm_medium=social&utm_campaign=vdb_launch)
