@@ -307,7 +307,7 @@ Recommended Reading:
 - [BGE M3-Embedding: Multi-Lingual, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation](https://arxiv.org/pdf/2402.03216)
 
 ### How do you train an embedding model?
-Embeddings models are trained with contrastive loss, ranging from Softmax contrastive loss and up to more complex loss functions such as InfoNCE, and Multiple Negative Ranking Loss. A process known as hard negative mining is utilized during training as well.
+Embeddings models are trained with contrastive loss, ranging from simple contrastive loss and up to more complex loss functions such as InfoNCE and Multiple Negative Ranking Loss. A process known as hard negative mining is also utilized during training as well.
 
 Recommended Reading:
 - [Contrastive Representation Learning by Lilian Weng (OpenAI)](https://lilianweng.github.io/posts/2021-05-31-contrastive/)
@@ -321,6 +321,12 @@ Contrastive learning is a technique used to train embedding models, it involves 
 
 Recommended Reading:
 - [SentenceTransformers Losses](https://github.com/UKPLab/sentence-transformers/tree/master/sentence_transformers/losses)
+- [Contrastive Representation Learning by Lilian Weng (OpenAI)](https://lilianweng.github.io/posts/2021-05-31-contrastive/)
+- [Representation Learning with Contrastive Predictive Coding](https://arxiv.org/abs/1807.03748)
+- [Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/abs/1908.10084)
+- [SentenceTransformer Losses Documentation](https://www.sbert.net/docs/sentence_transformer/loss_overview.html)
+- [Hard Negative Mining Used by BGE Text Embedding Models](https://github.com/FlagOpen/FlagEmbedding/blob/master/FlagEmbedding/baai_general_embedding/finetune/hn_mine.py)
+
 
 ### Explain the intuition behind single vector dense represenations
 Single vector dense represenations are often the norm in text embedding models, they're usually produced by pooling the contextualized embeddings after a forward pass from the model, pooling techniques include mean pooling, max pooling, and CLS token pooling. 
