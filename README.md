@@ -201,6 +201,9 @@ Recommended Reading:
 ### What is a common design pattern for grounding LLM answers in facts?
 Retrieval Augmented Generation (RAG) is a common design pattern for grounding LLM answers in facts. This technique involves retrieving relevant information from a knowledge base and using it to guide the generation of text by the LLM.
 
+Recommended Reading:
+- [Patterns for Building LLM-based Systems & Products by Eugene Yan (Amazon)](https://eugeneyan.com/writing/llm-patterns/)
+
 ### Explain the intuition and methodology behind Retrieval Augmented Generation (RAG)
 Retrieval Augmented Generation (RAG) is composed of two main component:
 - **A retriever:** This component is responsible for retrieving relevant information from a knowledge base given a query.
@@ -225,6 +228,8 @@ Recommended Reading (both sides of the argument):
 - [Post by Justin Zhao, Foudning Engineer @ Predibase](https://www.linkedin.com/posts/justin-zhao_we-keep-hearing-questions-about-fine-tuning-activity-7159251147076067328-flhR?utm_source=share&utm_medium=member_desktop)
 - [Musings on building a Generative AI product - Linkedin Engineering](https://www.linkedin.com/blog/engineering/generative-ai/musings-on-building-a-generative-ai-product)
 - [RAG vs. Fine-tuning by Armand Ruiz, VP of Product, AI Platform @ IBM](https://www.linkedin.com/posts/armand-ruiz_rag-vs-fine-tuning-its-not-an-eitheror-activity-7202987364254638081-YpvE/?utm_source=share&utm_medium=member_android)
+- [Patterns for Building LLM-based Systems & Products by Eugene Yan (Amazon)](https://eugeneyan.com/writing/llm-patterns/)
+- [What We’ve Learned From A Year of Building with LLMs](https://applied-llms.org/)
 
 ## Chunking Strategies
 
