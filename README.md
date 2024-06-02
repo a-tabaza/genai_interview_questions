@@ -7,12 +7,11 @@ _Note:_ I'm trying to keep the answers I write myself to a minumum, since I am i
 I also plan to expand this to Generative AI in general.
 
 ## Preamble
-If you've reached the stage where you're interviewing for Generative AI roles, this will help you a lot. 
+**Important:** 
+> I think it might be necessary to clarify that the answers I provide, regardless if they are my own writeups or if I'm citing a source, are not in any way or form definiteve, what I'm trying to do is get you started on the right path, and give you a general idea of what to expect, you should definetly read any and all resources I provide, and then some. If you want this to be your last stop, this is the wrong place for you. This is where it starts.
 
-If you're just getting started, my one and only piece of advice is:
-
-    Get comfortable reading papers, because there's so many papers. They never end.
-
+Also, if you're just getting started, my one and only piece of advice is:
+> Get comfortable reading papers, because there's so many papers. They never end.
 ## Table of Contents
 
 [1. LLM and Prompting Basics](#llm-and-prompting-basics)  
