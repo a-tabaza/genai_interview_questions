@@ -1,6 +1,6 @@
 This a project I'm working on right now, I'm trying to compile a list of questions and answers for Generative AI interviews.
 
-I'm using this [reference](https://www.masteringllm.com/course/llm-interview-questions-and-answers) as the base, credit to them for compiling it, however, I am taking _alot_ of liberies with editing the questions, as well as the answers, they are completely my own.
+I'm using this [reference](https://www.masteringllm.com/course/llm-interview-questions-and-answers) as the base, credit to them for compiling it, however, I am taking _alot_ of liberities with editing the questions, as well as the answers, they are completely my own.
 
 _Note:_ I'm trying to keep the answers I write myself to a minumum, since I am in no way or form an authoritative source on this topic. I will be providing references to the best of my ability. I refriained from adding any sort of visual aid for readablity and to keep the complexity of maintenance to a minimum. The resources and references I cite contain a wealth of information, mostly with visuals.
 
