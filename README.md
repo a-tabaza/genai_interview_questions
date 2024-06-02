@@ -15,8 +15,6 @@ Also, if you're just getting started, my one and only piece of advice is:
 
 ## Table of Contents
 
-| Chapters |
-|---------------------------------------------------------|
 [LLM and Prompting Basics](#llm-and-prompting-basics)
 [Retrieval Augmented Generation (RAG)](#retrieval-augmented-generation-rag)  
 [Chunking Strategies](#chunking-strategies)  
