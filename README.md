@@ -4,7 +4,8 @@ I'm using this [reference](https://www.masteringllm.com/course/llm-interview-que
 
 _Note:_ I'm trying to keep the answers I write myself to a minumum, since I am in no way or form an authoritative source on this topic. I will be providing references to the best of my ability. I refriained from adding any sort of visual aid for readablity and to keep the complexity of maintenance to a minimum. The resources and references I cite contain a wealth of information, mostly with visuals.
 
-I also plan to expand this to Generative AI in general.
+I plan to expand this to Generative AI in general, not just for language, covering everything from diffusion models up to vision-language models.
+Once I get the basic structure down and I'm happy with the prelimenary results, I will work on establishing an effecient methodology for contributing to this repository, and then I will open it up for contributions, but for now, I want to keep it simple and focused.
 
 ## Preamble
 **Important:** 
