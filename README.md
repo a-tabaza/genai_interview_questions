@@ -329,17 +329,17 @@ Recommended Reading:
 
 
 ### Explain the intuition behind single vector dense represenations
-Single vector dense represenations are often the norm in text embedding models, they're usually produced by pooling the contextualized embeddings after a forward pass from the model, pooling techniques include mean pooling, max pooling, and CLS token pooling. 
+Single vector dense represenations are often the norm in text embedding models, they're usually produced by pooling the contextualized embeddings after a forward pass from the model, pooling techniques include mean pooling, max pooling, and CLS token pooling. The intuition behind single vector dense represenations is that they are simple to implement and can be used for a wide range of tasks, as well as ease of indexing and retrieval. Dense represenations are also able to capture the semantics of the text, and are often used in second stage ranking.
 
 ### Explain the intuition behind multi vector dense represenations
 Multi vector dense represenations have shown to produce superior results to single vector dense represenations, they are produced by skipping the pooling step and using the contextualized embeddings in the form of a matrix, the query and document embeddings are then used to calculate the similarity between the two, models such as ColBERT have shown to produce superior results to single vector dense represenations. 
-An operator such as MaxSim is used to calculate the similarity between the query and document embeddings.
+An operator such as MaxSim is used to calculate the similarity between the query and document embeddings. The intuition behind multi vector dense represenations is that they are able to capture more information about the text, and produce better results than single vector dense represenations, models such as ColBERT also offer the ability to precompute document embeddings, allowing for very effecient retrieval. Dense represenations are also able to capture the semantics of the text, and are often used in second stage ranking.
 
 Recommended Reading:
 - [ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT](https://arxiv.org/abs/2004.12832)
 
 ### Explain the intuition behind sparse represenations
-Sparse text represenations are the oldest form of vector space models in information retrieval, they are usually based on TF-IDF derivatives and algorithms such as BM25, and remain a baseline for text retrieval systems. Their sparsity stems from the fact that the dimension of the embeddings often corresponds to the size of the vocabulary.
+Sparse text represenations are the oldest form of vector space models in information retrieval, they are usually based on TF-IDF derivatives and algorithms such as BM25, and remain a baseline for text retrieval systems. Their sparsity stems from the fact that the dimension of the embeddings often corresponds to the size of the vocabulary. The intuition behind sparse represenations is that they are explainable, computationally effecient, easy to implement and extremely effectient for indexing and retrieval. Sparse representation also focus on lexical similarity, and are often used in first stage ranking.
 
 Recommended Reading:
 - [Okapi BM25](https://en.wikipedia.org/wiki/Okapi_BM25)
