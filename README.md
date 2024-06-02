@@ -360,3 +360,27 @@ Recommended Viewing:
 ### How are vector databases different from traditional databases?
 Traditional databases are optimized for storing and querying structured data, such as text, numbers, and dates. They are not designed to handle vector data efficiently. Vector databases, on the other hand, are specifically designed to store and query vector data. They use specialized indexing techniques and algorithms to enable fast and accurate similarity search such as quantization and clustering of vectors.
 
+### How does a vector database work?
+A vector database usually contains indexes of vectors, these indexes contain matrices of vector embeddings, ordered in such a way that they can be queried efficiently. When a query is made, either text or a vector embedding is provided as input, in the case of text, it is embedded, and the vector database will query the appropriate index to retrieve the most similar vectors based on distance metrics. Usually, the vectors are compared using metrics such as cosine similarity, dot product, or Euclidean distance. Vectors also relate to a dictionary of metadata that could contain information such as the document ID, the document title, the corresponding text and more.
+
+### What are the different strategies for searching in a vector database or index?
+Search strategies in vector databases include:
+- Exhaustive Search: This strategy involves comparing the query vector with every vector in the database to find the most similar vectors.
+- Approximate Search: This strategy involves using approximate algorithms such as Heirarchal Navigable Small Worlds (HNSW) to find the most similar vectors. At the time of indexing, a graph is built, and the query vector is traversed through the graph to find the most similar vectors.
+
+Recommended Reading:
+- [Foundations of Vector Retrieval by Sebastian Bruch, Part II Retrieval Algorithms](https://arxiv.org/abs/2401.09350)
+- [Approximate Near Neighbor Search](https://www.cs.toronto.edu/~anikolov/CSC473W19/Lectures/LSH.pdf)
+- [Faiss Index Wiki](https://github.com/facebookresearch/faiss/wiki/Faiss-indexes)
+- [Hierarchical Navigable Small Worlds](https://en.wikipedia.org/wiki/Hierarchical_navigable_small_world)
+
+### Explain the concept of clustering in the context of vector retrieval, and its relation to the search space
+Once the vectors are indexed, they are often clustered to reduce the search space, this is done to reduce the number of vectors that need to be compared during the search process. Clustering is done by grouping similar vectors together, and then indexing the clusters. When a query is made, the search is first performed at the cluster level, and then at the vector level within the cluster. Algorithms such as K-means are often used for clustering.
+
+Recommended Reading:
+- [UNum USearch Documentation](https://github.com/unum-cloud/usearch#clustering)
+- [K-means Clustering](https://en.wikipedia.org/wiki/K-means_clustering)
+- [Faiss Index Wiki](https://github.com/facebookresearch/faiss/wiki/Faiss-building-blocks:-clustering,-PCA,-quantization)
+- [Foundations of Vector Retrieval by Sebastian Bruch, Part II Retrieval Algorithms, Chapter 7 Clustering](https://arxiv.org/abs/2401.09350)
+- [Hierarchical Navigable Small Worlds](https://en.wikipedia.org/wiki/Hierarchical_navigable_small_world)
+- [Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs](https://arxiv.org/abs/1603.09320)
