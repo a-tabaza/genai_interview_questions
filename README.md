@@ -19,7 +19,7 @@ Also, if you're just getting started, my one and only piece of advice is:
 [Retrieval Augmented Generation (RAG)](#retrieval-augmented-generation-rag)  
 [Chunking Strategies](#chunking-strategies)  
 [Embedding Models for Retrieval](#embedding-models-for-retrieval)    
-[Vector Retrieval, Databases and Indexes](#the-internal-workings-of-vector-databases-and-indexes)
+[Vector Retrieval, Databases and Indexes](#vector-retrieval-databases-and-indexes)
 
 ## LLM and Prompting Basics
 
