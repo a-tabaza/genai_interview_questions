@@ -203,6 +203,8 @@ Retrieval Augmented Generation (RAG) is a common design pattern for grounding LL
 
 Recommended Reading:
 - [Patterns for Building LLM-based Systems & Products by Eugene Yan (Amazon)](https://eugeneyan.com/writing/llm-patterns/)
+- [LLM From the Trenches: 10 Lessons Learned Operationalizing Models at GoDaddy](https://www.godaddy.com/resources/news/llm-from-the-trenches-10-lessons-learned-operationalizing-models-at-godaddy)
+- [What We’ve Learned From A Year of Building with LLMs](https://applied-llms.org/)
 
 ### Explain the intuition and methodology behind Retrieval Augmented Generation (RAG)
 Retrieval Augmented Generation (RAG) is composed of two main component:
@@ -222,7 +224,7 @@ A full solution that utilizes RAG to answer a complex question based on a knowle
 - **Post-processing:** the generated text is post-processed to ensure factuality and integrity.
 
 ### Discuss the case for RAG vs. Full Fine-tuning
-Recommended Reading (both sides of the argument):
+This is a very loaded question, but here are some resources to explore this topic further:
 - [Fine-Tuning vs. Retrieval Augmented Generation (RAG): Tailoring Large Language Models to Your Needs](https://www.linkedin.com/pulse/fine-tuning-vs-retrieval-augmented-generation-rag-tailoring-liz-liu/?trackingId=iQpGPevfTpG5eIb5v1%2BaJA%3D%3D)
 - [Enhancing LLMs with Retrieval Augmented Generation](https://scale.com/blog/retrieval-augmented-generation-to-enhance-llms?utm_source=linkedin&utm_medium=organic-social&utm_campaign=rag-blog)
 - [Post by Justin Zhao, Foudning Engineer @ Predibase](https://www.linkedin.com/posts/justin-zhao_we-keep-hearing-questions-about-fine-tuning-activity-7159251147076067328-flhR?utm_source=share&utm_medium=member_desktop)
@@ -230,6 +232,7 @@ Recommended Reading (both sides of the argument):
 - [RAG vs. Fine-tuning by Armand Ruiz, VP of Product, AI Platform @ IBM](https://www.linkedin.com/posts/armand-ruiz_rag-vs-fine-tuning-its-not-an-eitheror-activity-7202987364254638081-YpvE/?utm_source=share&utm_medium=member_android)
 - [Patterns for Building LLM-based Systems & Products by Eugene Yan (Amazon)](https://eugeneyan.com/writing/llm-patterns/)
 - [What We’ve Learned From A Year of Building with LLMs](https://applied-llms.org/)
+- [LLM From the Trenches: 10 Lessons Learned Operationalizing Models at GoDaddy](https://www.godaddy.com/resources/news/llm-from-the-trenches-10-lessons-learned-operationalizing-models-at-godaddy)
 
 ## Chunking Strategies
 
