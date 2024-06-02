@@ -344,3 +344,19 @@ Metrics for benchmarking the performance of an embedding model include:
 
 Recommended Reading:
 - [Evaluation measures (information retrieval)](https://en.wikipedia.org/wiki/Evaluation_measures_(information_retrieval))
+
+## The Internal Workings of Vector Databases
+
+### What is a vector database?
+A vector database is a database that is optimized for storing and querying vector data. It allows for efficient storage and retrieval of vector embeddings, and is often used in applications that require semantic similarity search.
+Vector databases are a new paradigm that has emerged as part of the tech stack needed to keep up with the demands of GenAI applications.
+
+Recommended Viewing:
+- [Qdrant](https://qdrant.tech/)
+- [Milvus](https://milvus.io/)
+- [Chroma](https://www.trychroma.com/)
+- [pgvector](https://github.com/pgvector/pgvector)
+
+### How are vector databases different from traditional databases?
+Traditional databases are optimized for storing and querying structured data, such as text, numbers, and dates. They are not designed to handle vector data efficiently. Vector databases, on the other hand, are specifically designed to store and query vector data. They use specialized indexing techniques and algorithms to enable fast and accurate similarity search such as quantization and clustering of vectors.
+
