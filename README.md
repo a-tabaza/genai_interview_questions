@@ -12,6 +12,8 @@ I also plan to expand this to Generative AI in general.
 
 Also, if you're just getting started, my one and only piece of advice is:
 > Get comfortable reading papers, because there's so many papers. They never end.
+
+
 ## Table of Contents
 
 [LLM and Prompting Basics](#llm-and-prompting-basics)  
