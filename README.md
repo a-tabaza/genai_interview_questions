@@ -1,15 +1,15 @@
 This a project I'm working on right now, I'm trying to compile a list of questions and answers for Generative AI interviews.
 
-I'm using this [reference](https://www.masteringllm.com/course/llm-interview-questions-and-answers) as the base, credit to them for compiling it, however, I am taking _alot_ of liberities with editing the questions, as well as the answers, they are completely my own.
+I'm using this [reference](https://www.masteringllm.com/course/llm-interview-questions-and-answers) as the base, credit to them for compiling it, however, I am taking _a lot_ of liberties with editing the questions, as well as the answers, they are completely my own.
 
-_Note:_ I'm trying to keep the answers I write myself to a minumum, since I am in no way or form an authoritative source on this topic. I will be providing references to the best of my ability. I refriained from adding any sort of visual aid for readablity and to keep the complexity of maintenance to a minimum. The resources and references I cite contain a wealth of information, mostly with visuals.
+_Note:_ I'm trying to keep the answers I write myself to a minimum, since I am in no way or form an authoritative source on this topic. I will be providing references to the best of my ability. I refrained from adding any sort of visual aid for readability and to keep the complexity of maintenance to a minimum. The resources and references I cite contain a wealth of information, mostly with visuals.
 
 I plan to expand this to Generative AI in general, not just for language, covering everything from diffusion models up to vision-language models.
-Once I get the basic structure down and I'm happy with the prelimenary results, I will work on establishing an effecient methodology for contributing to this repository, and then I will open it up for contributions, but for now, I want to keep it simple and focused.
+Once I get the basic structure down and I'm happy with the preliminary results, I will work on establishing an efficient methodology for contributing to this repository, and then I will open it up for contributions, but for now, I want to keep it simple and focused.
 
 ## Preamble
 **Important:** 
-> I think it might be necessary to clarify that the answers I provide, regardless if they are my own writeups or if I'm citing a source, are not in any way or form definiteve, what I'm trying to do is get you started on the right path, and give you a general idea of what to expect, you should definetly read any and all resources I provide, and then some. If you want this to be your last stop, this is the wrong place for you. This is where it starts.
+> I think it might be necessary to clarify that the answers I provide, regardless if they are my own writeup or if I'm citing a source, are not in any way or form definitive, what I'm trying to do is get you started on the right path, and give you a general idea of what to expect, you should definitely read any and all resources I provide, and then some. If you want this to be your last stop, this is the wrong place for you. This is where it starts.
 
 Also, if you're just getting started, my one and only piece of advice is:
 > Get comfortable reading papers, because there's so many papers. They never end.
@@ -54,7 +54,7 @@ An excellent resource to learn more about these tasks is the [BERT paper](https:
 This stage is much simpler than pretraining, as the model has already learned a lot about language, and now we just need to teach it about a specific task. All we need for this stage is the input data (prompts) and the labels (responses). 
 
 #### Alignment:
-This stage is often the most cruical and complex stage, it requires the use of seperate reward models, the use of different learning paradigms such as Reinforcement Learning, and more. 
+This stage is often the most crucial and complex stage, it requires the use of separate reward models, the use of different learning paradigms such as Reinforcement Learning, and more. 
 
 This stage mainly aims to align the model's predictions with the human's preferences. This stage often interweaves with the fine-tuning stage. Essential reading for this stage is the [InstructGPT paper](https://arxiv.org/pdf/2203.02155), this paper introduced the concept of Reinforcement Learning from Human Feedback (RLHF) which uses [Proximal Policy Optimization](https://arxiv.org/pdf/1707.06347).
 
@@ -67,7 +67,7 @@ Other methods of Aligning the model's predictions with human preferences include
 Tokens are the smallest unit of text that the model can understand, they can be words, subwords, or characters.
 
 ### What are tokenizers in the context of LLMs?
-Tokenizers are responsiple for converting text into tokens, they can be as simple as splitting the text by spaces, or as complex as using subword tokenization. The choice of tokenizer can have a significant impact on the model's performance, as it can affect the model's ability to understand the context of the text.
+Tokenizers are responsible for converting text into tokens, they can be as simple as splitting the text by spaces, or as complex as using subword tokenization. The choice of tokenizer can have a significant impact on the model's performance, as it can affect the model's ability to understand the context of the text.
 
 Some common tokenizers include:
 - [Byte Pair Encoding (BPE)](https://aclanthology.org/P16-1162.pdf) 
@@ -228,7 +228,7 @@ A full solution that utilizes RAG to answer a complex question based on a knowle
 This is a very loaded question, but here are some resources to explore this topic further:
 - [Fine-Tuning vs. Retrieval Augmented Generation (RAG): Tailoring Large Language Models to Your Needs](https://www.linkedin.com/pulse/fine-tuning-vs-retrieval-augmented-generation-rag-tailoring-liz-liu/?trackingId=iQpGPevfTpG5eIb5v1%2BaJA%3D%3D)
 - [Enhancing LLMs with Retrieval Augmented Generation](https://scale.com/blog/retrieval-augmented-generation-to-enhance-llms?utm_source=linkedin&utm_medium=organic-social&utm_campaign=rag-blog)
-- [Post by Justin Zhao, Foudning Engineer @ Predibase](https://www.linkedin.com/posts/justin-zhao_we-keep-hearing-questions-about-fine-tuning-activity-7159251147076067328-flhR?utm_source=share&utm_medium=member_desktop)
+- [Post by Justin Zhao, Founding Engineer @ Predibase](https://www.linkedin.com/posts/justin-zhao_we-keep-hearing-questions-about-fine-tuning-activity-7159251147076067328-flhR?utm_source=share&utm_medium=member_desktop)
 - [Musings on building a Generative AI product - Linkedin Engineering](https://www.linkedin.com/blog/engineering/generative-ai/musings-on-building-a-generative-ai-product)
 - [RAG vs. Fine-tuning by Armand Ruiz, VP of Product, AI Platform @ IBM](https://www.linkedin.com/posts/armand-ruiz_rag-vs-fine-tuning-its-not-an-eitheror-activity-7202987364254638081-YpvE/?utm_source=share&utm_medium=member_android)
 - [Patterns for Building LLM-based Systems & Products by Eugene Yan (Amazon)](https://eugeneyan.com/writing/llm-patterns/)
@@ -242,7 +242,7 @@ Chunking text is the process of breaking down a large piece of text into smaller
 
 During the training of embedding models, which are often used as retrievers, positive and negative pairs of text are used to indicate what pieces of text correspond to each other, examples include the titles, headers and subheaders on a Wikipedia page, and their corresponding paragraphs, reddit posts and their top voted comments, etc.
 
-A user query is often embedded, and an index is queried, if the index had entire documents contained within it to be queried for top-k hits, a retreiver would not be able to return the most relevant information, as the documents to be queried would be too large to comprehend.
+A user query is often embedded, and an index is queried, if the index had entire documents contained within it to be queried for top-k hits, a retriever would not be able to return the most relevant information, as the documents to be queried would be too large to comprehend.
 
 To summarize, we chunk text because:
 - We need to break down large pieces of text into smaller, more manageable chunks, where we ideally wish to have each chunk contain defined pieces of information we can query.
@@ -260,17 +260,17 @@ For simplicity, our tokenizer is a white space tokenizer, and each word is a tok
 
 We know that at most, we have an embedding model capable of embedding 8192 tokens:
 - If we were to embed the entire book, we would have to chunk the book into 5 chunks. Each chunk would contain 5 chapters, with 7200 tokens. This is a tremendous amount of information to embed, and the model would not be able to retrieve relevant information efficiently.
-- We can embed each chapter individually, this would mean that each chapter would yeild 1500 tokens, which is well within the model's capacity to embed. But we know that chapters contain multiple topics, and we would not be able to retrieve the most relevant information.
+- We can embed each chapter individually, this would mean that each chapter would yield 1500 tokens, which is well within the model's capacity to embed. But we know that chapters contain multiple topics, and we would not be able to retrieve the most relevant information.
 - We can embed each page, resulting in 450 tokens per page, this is a good balance between the two extremes, as pages often contain a single topic, and we would be able to retrieve the most relevant information, however, what if the information we need is spread across multiple pages?
-- We can embed each paragraph individually, this would mean that each paragraph would yeild 150 tokens, which is well within the model's capacity to embed. TParagraphs often contain a single topic, and we would be able to retrieve the most relevant information, however, what if the flow of information is not linear, and the information we need is spread across multiple paragraphs, and we need to aggregate it?
+- We can embed each paragraph individually, this would mean that each paragraph would yield 150 tokens, which is well within the model's capacity to embed. TParagraphs often contain a single topic, and we would be able to retrieve the most relevant information, however, what if the flow of information is not linear, and the information we need is spread across multiple paragraphs, and we need to aggregate it?
 - We can embed each sentence individually, but here we risk losing the context of the paragraph, and the model would not be able to retrieve the most relevant information.
 
 All of this is to illustrate that there is no fixed way to chunk text, and the best way to chunk text is to experiment and see what works best for your use case.
 
 ### What are the different chunking strategies used in RAG systems and how do you evaluate your chunking strategy?
-An authorotative source on this topic is the excellent [notebook](https://github.com/FullStackRetrieval-com/RetrievalTutorials/blob/main/tutorials/LevelsOfTextSplitting/5_Levels_Of_Text_Splitting.ipynb) and accompyaning [video](https://www.youtube.com/watch?v=8OJC21T2SL4) by [Greg Kamradt](https://www.youtube.com/@DataIndependent), in which they explain the different levels of text splitting. 
+An authoritative source on this topic is the excellent [notebook](https://github.com/FullStackRetrieval-com/RetrievalTutorials/blob/main/tutorials/LevelsOfTextSplitting/5_Levels_Of_Text_Splitting.ipynb) and accompanying [video](https://www.youtube.com/watch?v=8OJC21T2SL4) by [Greg Kamradt](https://www.youtube.com/@DataIndependent), in which they explain the different levels of text splitting. 
 
-The notebook also goes over ways to evaluate and vizualize the different levels of text splitting, and how to use them in a retrieval system.
+The notebook also goes over ways to evaluate and visualize the different levels of text splitting, and how to use them in a retrieval system.
 
 Recommended Viewing:
 - [ChunkViz: A Visual Exploration of Text Chunking](https://chunkviz.up.railway.app/)
@@ -293,7 +293,7 @@ Recommended Reading:
 ### How do embedding models work in the context of systems with LLMs?
 Embedding models are often used as retrievers, to utilize their retrieval capabilities, semantic textual similarity is used where in vectors produced by the models are measured in similarity using metrics such as dot product, cosine similarity, etc.
 
-- [Retriver Documentation by LlamaIndex](https://docs.llamaindex.ai/en/stable/module_guides/querying/retriever/)
+- [Retriever Documentation by LlamaIndex](https://docs.llamaindex.ai/en/stable/module_guides/querying/retriever/)
 
 ### What are the different types of text embeddings?
 - Dense Multi-vectors (e.g. ColBERT)
@@ -329,18 +329,18 @@ Recommended Reading:
 - [Hard Negative Mining Used by BGE Text Embedding Models](https://github.com/FlagOpen/FlagEmbedding/blob/master/FlagEmbedding/baai_general_embedding/finetune/hn_mine.py)
 
 
-### Explain the intuition behind single vector dense represenations
-Single vector dense represenations are often the norm in text embedding models, they're usually produced by pooling the contextualized embeddings after a forward pass from the model, pooling techniques include mean pooling, max pooling, and CLS token pooling. The intuition behind single vector dense represenations is that they are simple to implement and can be used for a wide range of tasks, as well as ease of indexing and retrieval. Dense represenations are also able to capture the semantics of the text, and are often used in second stage ranking.
+### Explain the intuition behind single vector dense representations
+Single vector dense representations are often the norm in text embedding models, they're usually produced by pooling the contextualized embeddings after a forward pass from the model, pooling techniques include mean pooling, max pooling, and CLS token pooling. The intuition behind single vector dense representations is that they are simple to implement and can be used for a wide range of tasks, as well as ease of indexing and retrieval. Dense representations are also able to capture the semantics of the text, and are often used in second stage ranking.
 
-### Explain the intuition behind multi vector dense represenations
-Multi vector dense represenations have shown to produce superior results to single vector dense represenations, they are produced by skipping the pooling step and using the contextualized embeddings in the form of a matrix, the query and document embeddings are then used to calculate the similarity between the two, models such as ColBERT have shown to produce superior results to single vector dense represenations. 
-An operator such as MaxSim is used to calculate the similarity between the query and document embeddings. The intuition behind multi vector dense represenations is that they are able to capture more information about the text, and produce better results than single vector dense represenations, models such as ColBERT also offer the ability to precompute document embeddings, allowing for very effecient retrieval. Dense represenations are also able to capture the semantics of the text, and are often used in second stage ranking.
+### Explain the intuition behind multi vector dense representations
+Multi vector dense representations have shown to produce superior results to single vector dense representations, they are produced by skipping the pooling step and using the contextualized embeddings in the form of a matrix, the query and document embeddings are then used to calculate the similarity between the two, models such as ColBERT have shown to produce superior results to single vector dense representations. 
+An operator such as MaxSim is used to calculate the similarity between the query and document embeddings. The intuition behind multi vector dense representations is that they are able to capture more information about the text, and produce better results than single vector dense representations, models such as ColBERT also offer the ability to precompute document embeddings, allowing for very efficient retrieval. Dense representations are also able to capture the semantics of the text, and are often used in second stage ranking.
 
 Recommended Reading:
 - [ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT](https://arxiv.org/abs/2004.12832)
 
-### Explain the intuition behind sparse represenations
-Sparse text represenations are the oldest form of vector space models in information retrieval, they are usually based on TF-IDF derivatives and algorithms such as BM25, and remain a baseline for text retrieval systems. Their sparsity stems from the fact that the dimension of the embeddings often corresponds to the size of the vocabulary. The intuition behind sparse represenations is that they are explainable, computationally effecient, easy to implement and extremely effectient for indexing and retrieval. Sparse representation also focus on lexical similarity, and are often used in first stage ranking.
+### Explain the intuition behind sparse representations
+Sparse text representations are the oldest form of vector space models in information retrieval, they are usually based on TF-IDF derivatives and algorithms such as BM25, and remain a baseline for text retrieval systems. Their sparsity stems from the fact that the dimension of the embeddings often corresponds to the size of the vocabulary. The intuition behind sparse representations is that they are explainable, computationally efficient, easy to implement and extremely efficient for indexing and retrieval. Sparse representation also focus on lexical similarity, and are often used in first stage ranking.
 
 Recommended Reading:
 - [Okapi BM25](https://en.wikipedia.org/wiki/Okapi_BM25)
@@ -388,7 +388,7 @@ A vector database usually contains indexes of vectors, these indexes contain mat
 ### What are the different strategies for searching in a vector database or index?
 Search strategies in vector databases include:
 - **Exhaustive Search:** This strategy involves comparing the query vector with every vector in the database to find the most similar vectors.
-- **Approximate Search:** This strategy involves using approximate algorithms such as Heirarchal Navigable Small Worlds (HNSW) to find the most similar vectors. At the time of indexing, a graph is built, and the query vector is traversed through the graph to find the most similar vectors.
+- **Approximate Search:** This strategy involves using approximate algorithms such as Hierarchal Navigable Small Worlds (HNSW) to find the most similar vectors. At the time of indexing, a graph is built, and the query vector is traversed through the graph to find the most similar vectors.
 
 Recommended Reading:
 - [Foundations of Vector Retrieval by Sebastian Bruch, Part II Retrieval Algorithms](https://arxiv.org/abs/2401.09350)
@@ -427,10 +427,10 @@ Recommended Reading:
 
 ### Explain the concept of product quantization within the context of vector retrieval
     In short, PQ is the process of:
-    1. Taking a big, high-dimensional vector,
-    2. Splitting it into equally sized chunks — our subvectors,
-    3. Assigning each of these subvectors to its nearest centroid (also called reproduction/reconstruction values),
-    4. Replacing these centroid values with unique IDs — each ID represents a centroid
+    - Taking a big, high-dimensional vector,
+    - Splitting it into equally sized chunks — our subvectors,
+    - Assigning each of these subvectors to its nearest centroid (also called reproduction/reconstruction values),
+    - Replacing these centroid values with unique IDs — each ID represents a centroid
 
 Reference: [Product Quantization](https://www.pinecone.io/learn/series/faiss/product-quantization/)
 
