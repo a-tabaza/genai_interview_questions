@@ -453,4 +453,14 @@ Recommended Reading:
 - [Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs](https://arxiv.org/abs/1603.09320)
 - [Hierarchical Navigable Small Worlds - Faiss: The Missing Manual](https://www.pinecone.io/learn/series/faiss/hnsw/)
 
-
+### Explain some of the distance and similarity metrics used in vector retrieval
+Distance and similarity metrics used in vector retrieval include:
+- [Euclidean Distance](https://en.wikipedia.org/wiki/Euclidean_distance)
+- [Dot Product](https://en.wikipedia.org/wiki/Dot_product)
+- [Cosine Similarity](https://en.wikipedia.org/wiki/Cosine_similarity)
+- [Pearson Correlation Coefficient](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient)
+- [Jaccard Similarity](https://en.wikipedia.org/wiki/Jaccard_index)
+- [Dice-Sørensen coefficient](https://en.wikipedia.org/wiki/Dice-S%C3%B8rensen_coefficient)
+- [Hamming Distance](https://en.wikipedia.org/wiki/Hamming_distance)
+- [Divergence](https://en.wikipedia.org/wiki/Divergence)
+- [Haversine Distance](https://en.wikipedia.org/wiki/Haversine_formula)
