@@ -362,6 +362,7 @@ Metrics for benchmarking the performance of an embedding model include:
 
 Recommended Reading:
 - [Evaluation measures (information retrieval)](https://en.wikipedia.org/wiki/Evaluation_measures_(information_retrieval))
+- [Introduction to Information Retrieval, Chapter 8](https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-in-information-retrieval-1.html)
 
 ## Vector Retrieval, Databases and Indexes
 
