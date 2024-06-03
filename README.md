@@ -462,5 +462,7 @@ Distance and similarity metrics used in vector retrieval include:
 - [Jaccard Similarity](https://en.wikipedia.org/wiki/Jaccard_index)
 - [Dice-Sørensen coefficient](https://en.wikipedia.org/wiki/Dice-S%C3%B8rensen_coefficient)
 - [Hamming Distance](https://en.wikipedia.org/wiki/Hamming_distance)
-- [Divergence](https://en.wikipedia.org/wiki/Divergence)
 - [Haversine Distance](https://en.wikipedia.org/wiki/Haversine_formula)
+
+Recommended Viewing:
+- [Fast Vector Similarity](https://github.com/Dicklesworthstone/fast_vector_similarity)
