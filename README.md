@@ -363,6 +363,17 @@ Metrics for benchmarking the performance of an embedding model include:
 Recommended Reading:
 - [Evaluation measures (information retrieval)](https://en.wikipedia.org/wiki/Evaluation_measures_(information_retrieval))
 - [Introduction to Information Retrieval, Chapter 8](https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-in-information-retrieval-1.html)
+- [Evaluation Metrics for Search and Recommendation Systems](https://weaviate.io/blog/retrieval-evaluation-metrics)
+
+### How do you pick an embedding model for a specific use case?
+Picking an embedding model could be a pivotal factor in the performance of your retrieval system, and careful consideration should be taken when choosing one. It is a broad process that involves experimentation, and the following resources will help you make an informed decision:
+- [Step-by-Step Guide to Choosing the Best Embedding Model for Your Application](https://weaviate.io/blog/how-to-choose-an-embedding-model)
+
+Recommended Viewing:
+- [Massive Text Embedding Benchmark (MTEB) Leaderboard](https://huggingface.co/spaces/mteb/leaderboard)
+- [Evaluation measures (information retrieval)](https://en.wikipedia.org/wiki/Evaluation_measures_(information_retrieval))
+- [Introduction to Information Retrieval, Chapter 8](https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-in-information-retrieval-1.html)
+- [Evaluation Metrics for Search and Recommendation Systems](https://weaviate.io/blog/retrieval-evaluation-metrics)
 
 ## Vector Retrieval, Databases and Indexes
 
@@ -439,7 +450,7 @@ Recommended Reading:
 - [Product Quantization for Nearest Neighbor Search](https://www.researchgate.net/publication/47815472_Product_Quantization_for_Nearest_Neighbor_Search)
 
 ### Explain the concept of inverted indices within the context of vector retrieval
-    The Inverted File Index (IVF) index consists of search scope reduction through clustering. It’s a very popular index as it’s easy to use, with high search-quality and reasonable search-speed.
+    The Inverted File Index (IVF) index consists of search scope reduction through clustering.
 
 Reference: [Inverted File Index](https://www.pinecone.io/learn/series/faiss/vector-indexes/#Inverted-File-Index)
 
