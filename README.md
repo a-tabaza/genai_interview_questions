@@ -183,6 +183,14 @@ This is a very broad question, but the following will help you form a basic unde
 There is no answer for this question, I put it as an excuse to link this reference:
 - [Fuck You, Show Me The Prompt.](https://hamel.dev/blog/posts/prompt/)
 
+### Suppose you want an LLM to output JSON or YAML or any other structure, how would you ensure the output is parsable?
+There are multiple methods to get LLMs to generate structured outputs that are parsable every time, common methods depends on the concept of function calling in LLMs.
+
+Recommended Reading and Viewing:
+- [Instructor](https://github.com/jxnl/instructor)
+- [LlamaIndex Structured Output](https://docs.llamaindex.ai/en/stable/module_guides/querying/structured_outputs/)
+- [OpenAI JSON Mode](https://platform.openai.com/docs/guides/text-generation/json-mode)
+
 ### Explain the concept of hallucination in the context of LLMs
 ```
 The term describes when LLMs produce text that is incorrect, makes no sense, or is unrelated to reality
@@ -291,8 +299,9 @@ Recommended Reading:
 ### What are embedding models?
 Embedding models are Language Models trained for the purpose of vectorizing text, they are often BERT derivatives, and are trained on a large corpus of text to learn the semantics of the text, recent trends however also show it is possible to use much larger language models for this purpose such as Mistral or Llama.
 
-Recommended Reading:
+Recommended Reading and Viewing:
 - [Quickstart for SentenceTransformers](https://www.sbert.net/docs/quickstart.html)
+- [llm2vec](https://github.com/McGill-NLP/llm2vec)
 
 ### How do embedding models work in the context of systems with LLMs?
 Embedding models are often used as retrievers, to utilize their retrieval capabilities, semantic textual similarity is used where in vectors produced by the models are measured in similarity using metrics such as dot product, cosine similarity, etc.
