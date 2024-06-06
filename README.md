@@ -179,6 +179,10 @@ This is a very broad question, but the following will help you form a basic unde
 - [Principled Instructions Are All You Need for Questioning LLaMA-1/2, GPT-3.5/4](https://arxiv.org/abs/2312.16171v2)
 - [Prompting Fundamentals and How to Apply them Effectively by Eugene Yan (Amazon)](https://eugeneyan.com/writing/prompting/?es_id=3eb4c98a3b)
 
+### What LLM framework produces the best outputs?
+There is no answer for this question, I put it as an excuse to link this reference:
+- [Fuck You, Show Me The Prompt.](https://hamel.dev/blog/posts/prompt/)
+
 ### Explain the concept of hallucination in the context of LLMs
 ```
 The term describes when LLMs produce text that is incorrect, makes no sense, or is unrelated to reality
