@@ -546,6 +546,7 @@ Reference: [BM25](https://en.wikipedia.org/wiki/Okapi_BM25)
 Reranking models are sequence classification models trained to take a pair of query and documents, and output raw similiarity scores. 
 
 Recommended Reading, Viewing and Watching:
+- [Rethink Training of BERT Rerankers in Multi-Stage Retrieval Pipeline](https://arxiv.org/abs/2101.08751)
 - [SentenceTransformers Documentation on Cross-Encoders](https://www.sbert.net/examples/applications/retrieve_rerank/README.html)
 - [Reranker Libarary](https://github.com/luyug/Reranker)
 - [Rerankers and Two-Stage Retrieval](https://www.pinecone.io/learn/series/rag/rerankers/)
