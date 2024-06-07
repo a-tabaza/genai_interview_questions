@@ -16,12 +16,17 @@ Also, if you're just getting started, my one and only piece of advice is:
 
 ## Table of Contents
 
-[LLM and Prompting Basics](#llm-and-prompting-basics)   
-[Retrieval Augmented Generation (RAG)](#retrieval-augmented-generation-rag)  
-[Chunking Strategies](#chunking-strategies)  
-[Embedding Models for Retrieval](#embedding-models-for-retrieval)    
-[Vector Retrieval, Databases and Indexes](#vector-retrieval-databases-and-indexes)
-[Advanced Search Algorithms](#advanced-search-algorithms)
+[1. LLM and Prompting Basics](#llm-and-prompting-basics)    
+
+[2. Retrieval Augmented Generation (RAG)](#retrieval-augmented-generation-rag)  
+
+[3. Chunking Strategies](#chunking-strategies)  
+
+[4. Embedding Models for Retrieval](#embedding-models-for-retrieval)    
+
+[5. Vector Retrieval, Databases and Indexes](#vector-retrieval-databases-and-indexes)
+
+[6. Advanced Search Algorithms](#advanced-search-algorithms)
 
 ## LLM and Prompting Basics
 
