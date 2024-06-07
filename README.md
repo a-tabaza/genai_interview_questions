@@ -589,6 +589,9 @@ To understand the disadvantages of self-attention, you'll need familiarize yours
 - [Hyena Hierarchy: Towards Larger Convolutional Language Models](https://hazyresearch.stanford.edu/blog/2023-03-07-hyena)
 - [Hungry Hungry Hippos: Towards Language Modeling with State Space Models](https://arxiv.org/abs/2212.14052)
 
+### What is the difference between encoders, decoders, and encoder-decoder architectures in LLMs?
+- [Understanding Encoder And Decoder LLMs](https://magazine.sebastianraschka.com/p/understanding-encoder-and-decoder)
+
 ### Explain the concept of positional encoding in LLMs
 There are multiple ways to encode positional information in LLMs, the most common way is to use sinusoidal positional encodings, known as absolute positional encodings. Other methods include relative positional encodings, and newer methods such as Rotary Positional Embeddings. Here are some resources to get you started:
 - [Transformer Architecture: The Positional Encoding](https://kazemnejad.com/blog/transformer_architecture_positional_encoding/)
