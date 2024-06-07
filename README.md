@@ -21,6 +21,7 @@ Also, if you're just getting started, my one and only piece of advice is:
 [Chunking Strategies](#chunking-strategies)  
 [Embedding Models for Retrieval](#embedding-models-for-retrieval)    
 [Vector Retrieval, Databases and Indexes](#vector-retrieval-databases-and-indexes)
+[Advanced Search Algorithms](#advanced-search-algorithms)
 
 ## LLM and Prompting Basics
 
