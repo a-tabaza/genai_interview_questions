@@ -413,6 +413,7 @@ Recommended Viewing:
 - [Chroma](https://www.trychroma.com/)
 - [pgvector](https://github.com/pgvector/pgvector)
 - [Weaviate](https://weaviate.io/)
+- [Vespa](https://vespa.ai/)
 
 ### How are vector databases different from traditional databases?
 Traditional databases are optimized for storing and querying structured data, such as text, numbers, and dates. They are not designed to handle vector data efficiently. Vector databases, on the other hand, are specifically designed to store and query vector data. They use specialized indexing techniques and algorithms to enable fast and accurate similarity search such as quantization and clustering of vectors.
