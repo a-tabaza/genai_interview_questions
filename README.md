@@ -564,3 +564,52 @@ Recommended Reading:
 - [Evaluation Metrics for Search and Recommendation Systems](https://weaviate.io/blog/retrieval-evaluation-metrics)
 - [ir-measures](https://ir-measur.es/en/latest/measures.html)
 - [Good Authority Figure on IR, one Tweet as a starting point](https://twitter.com/jobergum/status/1798640402427515293)
+
+## Language Model Internal Workings
+
+_Note:_ from here on, I'll refrain from answering as much as I can, and just link papers and references, this part is arguably one of the more complex parts, so it requires a lot of reading and understanding.
+
+### Explain the concept of attention (and self-attention) in LLMs
+To understand attention, you'll need to be familiar with the Transformer architecture, and their predecessor architectures. Here are some resources to get you started:
+- [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473)
+- [An Introductory Survey on Attention Mechanisms in NLP Problems](https://arxiv.org/abs/1811.05544)
+- [Attention is All You Need](https://arxiv.org/abs/1706.03762)
+- [Understanding and Coding the Self-Attention Mechanism of Large Language Models From Scratch](https://sebastianraschka.com/blog/2023/self-attention-from-scratch.html)
+- [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
+- [The Annotated Transformer](https://nlp.seas.harvard.edu/2018/04/03/attention.html)
+- [Build a Large Language Model (From Scratch)](https://github.com/rasbt/LLMs-from-scratch)
+
+### What are the disadvantages of the self-attention mechanism in LLMs?
+The main bottleneck of self-attention is its quadratic complexity with respect to the sequence length.
+To understand the disadvantages of self-attention, you'll need familiarize yourself with attention alternatives, the following will help you get started:
+- [Mamba: Linear-Time Sequence Modeling with Selective State Spaces](https://arxiv.org/abs/2312.00752)
+- [A Visual Guide to Mamba and State Space Models](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mamba-and-state)
+- [RWKV: Reinventing RNNs for the Transformer Era](https://arxiv.org/abs/2305.13048)
+- [Hyena Hierarchy: Towards Larger Convolutional Language Models (Paper)](https://arxiv.org/abs/2302.10866)
+- [Hyena Hierarchy: Towards Larger Convolutional Language Models](https://hazyresearch.stanford.edu/blog/2023-03-07-hyena)
+- [Hungry Hungry Hippos: Towards Language Modeling with State Space Models](https://arxiv.org/abs/2212.14052)
+
+### Explain the concept of positional encoding in LLMs
+There are multiple ways to encode positional information in LLMs, the most common way is to use sinusoidal positional encodings, known as absolute positional encodings. Other methods include relative positional encodings, and newer methods such as Rotary Positional Embeddings. Here are some resources to get you started:
+- [Transformer Architecture: The Positional Encoding](https://kazemnejad.com/blog/transformer_architecture_positional_encoding/)
+- [Understanding positional encoding in Transformers](https://www.blopig.com/blog/2023/10/understanding-positional-encoding-in-transformers/)
+- [RoFormer: Enhanced Transformer with Rotary Position Embedding](https://arxiv.org/abs/2104.09864)
+
+### Explain the concept of KV Caching in LLM Inference
+To understand KV Cache, you'll need to be familiar with the Transformer architecture and its limitations.
+
+Recommended Reading:
+- [Transformers Optimization: Part 1 - KV Cache](https://r4j4n.github.io/blogs/posts/kv/)
+- [Transformer Inference Arithmetic](https://kipp.ly/transformer-inference-arithmetic/)
+- [MiniCache: KV Cache Compression in Depth Dimension for Large Language Models](https://arxiv.org/abs/2405.14366)
+- [GEAR: An Efficient KV Cache Compression Recipe for Near-Lossless Generative Inference of LLM](https://arxiv.org/abs/2403.05527)
+
+### Explain the concept of a mixture of experts (MoE) in LLMs
+Mixture of experts is a type of architecture in LLMs, to understand how it works, you should go through the following resources, which cover the most prominent MoE models:
+- [Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](https://arxiv.org/abs/2101.03961)
+- [Mixtral of Experts](https://arxiv.org/abs/2401.04088)
+- [DeepSeekMoE: Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models](https://arxiv.org/abs/2401.06066)
+- [Introducing DBRX: A New State-of-the-Art Open LLM](https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm)
+- [MegaBlocks: Efficient Sparse Training with Mixture-of-Experts](https://arxiv.org/abs/2211.15841)
+- [MegaBlocks](https://github.com/databricks/megablocks)
+- [Grok-1](https://github.com/xai-org/grok-1)
