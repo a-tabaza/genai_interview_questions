@@ -581,6 +581,7 @@ To understand attention, you'll need to be familiar with the Transformer archite
 - [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
 - [The Annotated Transformer](https://nlp.seas.harvard.edu/2018/04/03/attention.html)
 - [Build a Large Language Model (From Scratch)](https://github.com/rasbt/LLMs-from-scratch)
+- [Transformer Taxonomy](https://kipp.ly/transformer-taxonomy/)
 
 ### What are the disadvantages of the self-attention mechanism in LLMs?
 The main bottleneck of self-attention is its quadratic complexity with respect to the sequence length.
