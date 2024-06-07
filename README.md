@@ -28,6 +28,8 @@ Also, if you're just getting started, my one and only piece of advice is:
 
 [6. Advanced Search Algorithms](#advanced-search-algorithms)
 
+[7. Language Model Internal Workings](#language-model-internal-workings)
+
 ## LLM and Prompting Basics
 
 ### What is the difference between Predictive/Discriminative and Generative AI Models?
