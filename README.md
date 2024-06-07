@@ -619,3 +619,4 @@ Mixture of experts is a type of architecture in LLMs, to understand how it works
 - [MegaBlocks: Efficient Sparse Training with Mixture-of-Experts](https://arxiv.org/abs/2211.15841)
 - [MegaBlocks](https://github.com/databricks/megablocks)
 - [Grok-1](https://github.com/xai-org/grok-1)
+- [Sparse Upcycling: Training Mixture-of-Experts from Dense Checkpoints](https://arxiv.org/abs/2212.05055)
