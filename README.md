@@ -56,12 +56,12 @@ This stage is much simpler than pretraining, as the model has already learned a 
 #### Alignment:
 This stage is often the most crucial and complex stage, it requires the use of separate reward models, the use of different learning paradigms such as Reinforcement Learning, and more. 
 
-This stage mainly aims to align the model's predictions with the human's preferences. This stage often interweaves with the fine-tuning stage. Essential reading for this stage is the [InstructGPT paper](https://arxiv.org/pdf/2203.02155), this paper introduced the concept of Reinforcement Learning from Human Feedback (RLHF) which uses [Proximal Policy Optimization](https://arxiv.org/pdf/1707.06347).
+This stage mainly aims to align the model's predictions with the human's preferences. This stage often interweaves with the fine-tuning stage. Essential reading for this stage is the [InstructGPT paper](https://arxiv.org/abs/2203.02155), this paper introduced the concept of Reinforcement Learning from Human Feedback (RLHF) which uses [Proximal Policy Optimization](https://arxiv.org/abs/1707.06347).
 
 Other methods of Aligning the model's predictions with human preferences include:
 - [Direct Preference Optimization: Your Language Model is Secretly a Reward Model](https://arxiv.org/abs/2305.18290)
-- [ORPO: Monolithic Preference Optimization without Reference Model](https://arxiv.org/pdf/2403.07691)
-- [KTO: Model Alignment as Prospect Theoretic Optimization](https://arxiv.org/pdf/2402.01306)
+- [ORPO: Monolithic Preference Optimization without Reference Model](https://arxiv.org/abs/2403.07691)
+- [KTO: Model Alignment as Prospect Theoretic Optimization](https://arxiv.org/abs/2402.01306)
 
 ### What is a token in the context of LLMs?
 Tokens are the smallest unit of text that the model can understand, they can be words, subwords, or characters.
@@ -72,7 +72,7 @@ Tokenizers are responsible for converting text into tokens, they can be as simpl
 Some common tokenizers include:
 - [Byte Pair Encoding (BPE)](https://aclanthology.org/P16-1162.pdf) 
 - [WordPiece](https://static.googleusercontent.com/media/research.google.com/ja//pubs/archive/37842.pdf)
-- [SentencePiece](https://arxiv.org/pdf/1808.06226)
+- [SentencePiece](https://arxiv.org/abs/1808.06226)
 
 Recommended reading (and watching):
 - [Summary of Tokenizers by HuggingFace](https://huggingface.co/docs/transformers/en/tokenizer_summary)
@@ -112,7 +112,7 @@ Newer decoding strategies include Speculative Decoding (assisted decoding) which
 
 Recommended reading:
 - [Text generation strategies by HuggingFace](https://huggingface.co/docs/transformers/generation_strategies)
-- [Speculative Decoding Paper](https://arxiv.org/pdf/2211.17192.pdf)
+- [Speculative Decoding Paper](https://arxiv.org/abs/2211.17192.pdf)
 - [A Hitchhiker’s Guide to Speculative Decoding by Team PyTorch at IBM](https://pytorch.org/blog/hitchhikers-guide-speculative-decoding/)
 
 ### What are the stopping criteria for decoding in the context of LLMs?
@@ -199,8 +199,8 @@ Reference: [LLM Hallucination—Types, Causes, and Solution by Nexla](https://ne
 
 Recommended Reading:
 - [Hallucination (Artificial Intelligence) - Wikipedia](https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence))
-- [Hallucination is Inevitable: An Innate Limitation of Large Language Models](https://arxiv.org/pdf/2401.11817)
-- [A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions](https://arxiv.org/pdf/2311.05232)
+- [Hallucination is Inevitable: An Innate Limitation of Large Language Models](https://arxiv.org/abs/2401.11817)
+- [A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions](https://arxiv.org/abs/2311.05232)
 
 ### What prompt engineering concept is known to enhance reasoning capabilities in LLMs?
 The concept of Chain-of-Thought Prompting is known to enhance reasoning capabilities in LLMs. This technique involves breaking down a complex task into a series of simpler tasks, and providing the model with the intermediate outputs of each task to guide it towards the final output.
@@ -315,10 +315,10 @@ Embedding models are often used as retrievers, to utilize their retrieval capabi
 
 Recommended Reading:
 - [Okapi BM25](https://en.wikipedia.org/wiki/Okapi_BM25)
-- [Text Embeddings by Weakly-Supervised Contrastive Pre-training](https://arxiv.org/pdf/2212.03533)
+- [Text Embeddings by Weakly-Supervised Contrastive Pre-training](https://arxiv.org/abs/2212.03533)
 - [ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT](https://arxiv.org/abs/2004.12832)
 - [SPLADE: Sparse Lexical and Expansion Model for First Stage Ranking](https://arxiv.org/abs/2107.05720)
-- [BGE M3-Embedding: Multi-Lingual, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation](https://arxiv.org/pdf/2402.03216)
+- [BGE M3-Embedding: Multi-Lingual, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation](https://arxiv.org/abs/2402.03216)
 
 ### How do you train an embedding model?
 Embeddings models are trained with contrastive loss, ranging from simple contrastive loss and up to more complex loss functions such as InfoNCE and Multiple Negative Ranking Loss. A process known as hard negative mining is also utilized during training as well.
@@ -373,10 +373,11 @@ Metrics for benchmarking the performance of an embedding model include:
 - Mean Reciprocal Rank (MRR)
 - Normalized Discounted Cumulative Gain (NDCG)
 
-Recommended Reading:
+Recommended Reading and Viewing:
 - [Evaluation measures (information retrieval)](https://en.wikipedia.org/wiki/Evaluation_measures_(information_retrieval))
 - [Introduction to Information Retrieval, Chapter 8](https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-in-information-retrieval-1.html)
 - [Evaluation Metrics for Search and Recommendation Systems](https://weaviate.io/blog/retrieval-evaluation-metrics)
+- [ir-measures](https://ir-measur.es/en/latest/measures.html)
 
 ### How do you pick an embedding model for a specific use case?
 Picking an embedding model could be a pivotal factor in the performance of your retrieval system, and careful consideration should be taken when choosing one. It is a broad process that involves experimentation, and the following resources will help you make an informed decision:
@@ -492,3 +493,67 @@ Distance and similarity metrics used in vector retrieval include:
 
 Recommended Viewing:
 - [Fast Vector Similarity](https://github.com/Dicklesworthstone/fast_vector_similarity)
+
+## Advanced Search Algorithms
+
+### Explain some of the architectures and patterns in retrieval systems and semantic search in the context of LLM systems
+This is a very active research topic, and no authoritative source exists, but here are some resources to explore this topic further:
+- [Retrieval-Augmented Generation for Large Language Models: A Survey](https://arxiv.org/abs/2312.10997)
+- [Seven Failure Points When Engineering a Retrieval Augmented Generation System](https://arxiv.org/abs/2401.05856)
+
+It is also worth noting that search, retrieval and reranking systems are built on established patterns and architectures in the fields of information retrieval, recommendation systems, and search engines.
+
+Some system architectures you might want to explore include:
+- [Twitter Algorithm](https://blog.x.com/engineering/en_us/topics/open-source/2023/twitter-recommendation-algorithm)
+- [Code for Twitter Algorithm](https://github.com/twitter/the-algorithm)
+- [Representation Learning for Recommender Systems](https://oars-workshop.github.io/2021/andrew.pdf)
+
+### How do you achieve good search in large scale systems?
+Achieving good search in large-scale systems involves a combination of efficient indexing, retrieval, and ranking techniques. Some strategies to achieve good search in large-scale systems include:
+- Using a lightweight retriever to generate a set of candidate documents preliminary to the main search, algorithms such as [BM25](https://en.wikipedia.org/wiki/Okapi_BM25) and keyword search are often used for this purpose.
+- Using a more complex retriever to generate a set of candidate documents, models such as [ColBERT](https://arxiv.org/abs/2004.12832) and [BGE-M3](https://arxiv.org/abs/2402.03216) are often used for this purpose.
+- Using a reranker to re-rank the candidate documents generated by the retriever, models such as [mixedbread-ai/mxbai-rerank-large-v1](https://huggingface.co/mixedbread-ai/mxbai-rerank-large-v1) and [BAAI/bge-reranker-large](https://huggingface.co/BAAI/bge-reranker-large) are often used for this purpose.
+- Combining the results of multiple retrieval methodologies such as dense and sparse using [Reciprocal Rank Fusion](https://www.assembled.com/blog/better-rag-results-with-reciprocal-rank-fusion-and-hybrid-search)
+
+You might notice that the entire process is done in phases of increasing complexity, this is known as phased ranking or multistage retrieval.
+
+Recommended Reading:
+- [Phased Ranking by Vespa](https://docs.vespa.ai/en/phased-ranking.html)
+- [Semantic Models for the First-stage Retrieval: A Comprehensive Review](https://arxiv.org/abs/2103.04831)
+- [Information Retrieval Meets Large Language Models: A Strategic Report from Chinese IR Community](https://arxiv.org/abs/2307.09751)
+
+But the most important aspect of achieving good search in large-scale systems is to experiment and iterate on your retrieval and ranking strategies, and to continuously monitor and evaluate the performance of your system.
+
+Recommended Reading:
+- [Evaluation measures (information retrieval)](https://en.wikipedia.org/wiki/Evaluation_measures_(information_retrieval))
+- [Introduction to Information Retrieval, Chapter 8](https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-in-information-retrieval-1.html)
+- [Evaluation Metrics for Search and Recommendation Systems](https://weaviate.io/blog/retrieval-evaluation-metrics)
+- [ir-measures](https://ir-measur.es/en/latest/measures.html)
+- [Good Authority Figure on IR, one Tweet as a starting point](https://twitter.com/jobergum/status/1798640402427515293)
+
+### Explain the concept behind keyword based search in the context of search systems
+    BM25 is a bag-of-words retrieval function that ranks a set of documents based on the query terms appearing in each document, regardless of their proximity within the document.
+
+Reference: [BM25](https://en.wikipedia.org/wiki/Okapi_BM25)
+
+### How are reranking models trained?
+Reranking models are sequence classification models trained to take a pair of query and documents, and output raw similiarity scores. 
+
+Recommended Reading, Viewing and Watching:
+- [SentenceTransformers Documentation on Cross-Encoders](https://www.sbert.net/examples/applications/retrieve_rerank/README.html)
+- [Reranker Libarary](https://github.com/luyug/Reranker)
+- [Rerankers and Two-Stage Retrieval](https://www.pinecone.io/learn/series/rag/rerankers/)
+- [Training a Language Model for Reranking (RankZephyr)](https://www.youtube.com/watch?v=vtH93FB6nac)
+
+### Explain the process for evaluating an end-to-end RAG system
+Evaluating RAG systems requires experimenting with and evaluating the individual components of the system, such as the retriever, generator, and reranker.
+
+Recommended Reading:
+- [RAGAS: An Evaluation Framework for Retrieval Augmented Generation](https://arxiv.org/abs/2309.15217)
+- [Evaluating Retrieval Augmented Generation using RAGAS](https://superlinked.com/vectorhub/articles/retrieval-augmented-generation-eval-qdrant-ragas)
+- [Evaluating Retrieval Augmented Generation - a framework for assessment](https://superlinked.com/vectorhub/articles/evaluating-retrieval-augmented-generation-framework)
+- [Evaluation measures (information retrieval)](https://en.wikipedia.org/wiki/Evaluation_measures_(information_retrieval))
+- [Introduction to Information Retrieval, Chapter 8](https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-in-information-retrieval-1.html)
+- [Evaluation Metrics for Search and Recommendation Systems](https://weaviate.io/blog/retrieval-evaluation-metrics)
+- [ir-measures](https://ir-measur.es/en/latest/measures.html)
+- [Good Authority Figure on IR, one Tweet as a starting point](https://twitter.com/jobergum/status/1798640402427515293)
