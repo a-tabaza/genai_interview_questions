@@ -310,6 +310,7 @@ Embedding models are Language Models trained for the purpose of vectorizing text
 Recommended Reading and Viewing:
 - [Quickstart for SentenceTransformers](https://www.sbert.net/docs/quickstart.html)
 - [llm2vec](https://github.com/McGill-NLP/llm2vec)
+- [NV-Embed: Improved Techniques for Training LLMs as Generalist Embedding Models](https://arxiv.org/abs/2405.17428)
 
 ### How do embedding models work in the context of systems with LLMs?
 Embedding models are often used as retrievers, to utilize their retrieval capabilities, semantic textual similarity is used where in vectors produced by the models are measured in similarity using metrics such as dot product, cosine similarity, etc.
