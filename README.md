@@ -609,6 +609,7 @@ To understand KV Cache, you'll need to be familiar with the Transformer architec
 Recommended Reading:
 - [Transformers Optimization: Part 1 - KV Cache](https://r4j4n.github.io/blogs/posts/kv/)
 - [Transformer Inference Arithmetic](https://kipp.ly/transformer-inference-arithmetic/)
+- [Challenges in Deploying Long-Context Transformers: A Theoretical Peak Performance Analysis](https://arxiv.org/abs/2405.08944)
 - [MiniCache: KV Cache Compression in Depth Dimension for Large Language Models](https://arxiv.org/abs/2405.14366)
 - [GEAR: An Efficient KV Cache Compression Recipe for Near-Lossless Generative Inference of LLM](https://arxiv.org/abs/2403.05527)
 
