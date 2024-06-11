@@ -12,7 +12,9 @@ Once I get the basic structure down and I'm happy with the preliminary results, 
 > I think it might be necessary to clarify that the answers I provide, regardless if they are my own writeup or if I'm citing a source, are not in any way or form definitive, what I'm trying to do is get you started on the right path, and give you a general idea of what to expect, you should definitely read any and all resources I provide, and then some. If you want this to be your last stop, this is the wrong place for you. This is where it starts.
 
 Also, if you're just getting started, my one and only piece of advice is:
-> Get comfortable reading papers, because there's so many papers. They never end.
+> Get comfortable reading papers, because they _never_ end.
+
+Paper on How to Read a Paper: [How to Read a Paper](http://ccr.sigcomm.org/online/files/p83-keshavA.pdf)
 
 ## Table of Contents
 
