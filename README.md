@@ -512,6 +512,7 @@ Recommended Viewing:
 This is a very active research topic, and no authoritative source exists, but here are some resources to explore this topic further:
 - [Retrieval-Augmented Generation for Large Language Models: A Survey](https://arxiv.org/abs/2312.10997)
 - [Seven Failure Points When Engineering a Retrieval Augmented Generation System](https://arxiv.org/abs/2401.05856)
+- [Levels of Complexity: RAG Applications](https://github.com/jxnl/n-levels-of-rag)
 
 It is also worth noting that search, retrieval and reranking systems are built on established patterns and architectures in the fields of information retrieval, recommendation systems, and search engines.
 
