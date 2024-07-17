@@ -70,6 +70,7 @@ This stage mainly aims to align the model's predictions with the human's prefere
 
 Other methods of Aligning the model's predictions with human preferences include:
 - [Direct Preference Optimization: Your Language Model is Secretly a Reward Model](https://arxiv.org/abs/2305.18290)
+- [SimPO: Simple Preference Optimization with a Reference-Free Reward](https://arxiv.org/abs/2405.14734)
 - [ORPO: Monolithic Preference Optimization without Reference Model](https://arxiv.org/abs/2403.07691)
 - [KTO: Model Alignment as Prospect Theoretic Optimization](https://arxiv.org/abs/2402.01306)
 
