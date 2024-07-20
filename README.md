@@ -549,6 +549,11 @@ Recommended Reading:
 - [ir-measures](https://ir-measur.es/en/latest/measures.html)
 - [Good Authority Figure on IR, one Tweet as a starting point](https://twitter.com/jobergum/status/1798640402427515293)
 
+Recommended talks about improving search, retrieval and RAG systems:
+- [Back to Basics for RAG w/ Jo Bergum](https://www.youtube.com/watch?v=nc0BupOkrhI)
+- [Systematically improving RAG applications](https://www.youtube.com/watch?v=RrDBV6odPKo)
+
+
 ### Explain the concept behind keyword based search in the context of search systems
     BM25 is a bag-of-words retrieval function that ranks a set of documents based on the query terms appearing in each document, regardless of their proximity within the document.
 
