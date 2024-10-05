@@ -32,6 +32,8 @@ Paper on How to Read a Paper: [How to Read a Paper](http://ccr.sigcomm.org/onlin
 
 [7. Language Model Internal Workings](#language-model-internal-workings)
 
+
+
 ## LLM and Prompting Basics
 
 ### What is the difference between Predictive/Discriminative and Generative AI Models?
@@ -561,7 +563,7 @@ Recommended talks about improving search, retrieval and RAG systems:
 - [Systematically improving RAG applications](https://www.youtube.com/watch?v=RrDBV6odPKo)
 
 ### How do you achieve fast search in large scale systems?
-Achieving fast searching involved optimizing the indexing and retrieval process, which takes non-trivial engineering effort, the following are some examples of the current landscape in the field of search and retrieval optimization:
+Achieving fast searching involves optimizing the indexing and retrieval process, which takes non-trivial engineering effort, the following are some examples of the current landscape in the field of search and retrieval optimization:
 - [Binary Quantization - Vector Search, 40x Faster](https://qdrant.tech/articles/binary-quantization/)
 - [Matryoshka 🤝 Binary vectors: Slash vector search costs with Vespa](https://blog.vespa.ai/combining-matryoshka-with-binary-quantization-using-embedder/)
 - [Binary and Scalar Embedding Quantization for Significantly Faster & Cheaper Retrieval](https://huggingface.co/blog/embedding-quantization)
